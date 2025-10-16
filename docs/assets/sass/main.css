@@ -1,14 +1,11 @@
 /* Varaible declaration */
 /* mixin's defined */
 /* Default formatting */
-body h1 h2 p ul li {
-  color: lightgrey;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background-color: lightyellow;
+  background-color: whitesmoke;
+  font-family: "Courier New", monospace;
 }
 
 /* Layout / containers */
@@ -18,25 +15,82 @@ body {
   flex-direction: column;
   min-height: 100lvh;
   height: 100lvh; /* Take full viewpiont */
-  margin: 0;
+  /*margin: 0;*/
   overflow-y: auto; /* If content overflow -> vertical scrolling */
-  padding: 0;
+  /*padding: 0;*/
   justify-content: center;
+  text-align: center;
   background-color: lightslategray;
 }
 
 .landing_item {
   flex-grow: 1;
+  background-color: black;
+  max-height: 100lvh;
+  overflow: hidden;
   text-align: center;
-  background-color: darkslategray;
+  justify-content: center;
+}
+.landing_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  animation: fade_in 3s ease-in-out 1s forwards;
+}
+.landing_item svg {
+  --path_stroke_size: 0.265; /* .26458437 */
+  --path_stroke: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.svg_dog {
+  animation: draw_line 2s linear 1s forwards;
+}
+
+.svg_cir {
+  animation: draw_line 2s linear 1s forwards;
+}
+
+.svg_dow {
+  animation: draw_line 1s linear 3s forwards;
+}
+
+.svg_l11, .svg_l12, .svg_l21, .svg_l22 {
+  animation: draw_line 2s linear 4s forwards;
+}
+
+.svg_txt1, .svg_txt2, .svg_txt3, .svg_txt4 {
+  opacity: 0;
+  animation: fade_txt 1s ease-in-out 0s forwards;
+}
+
+@keyframes draw_line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade_txt {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade_in {
+  100% {
+    opacity: 0.4;
+  }
+}
 /* Menu */
 .sticky_container {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 5000; /* > main page < overlay */
+  background-color: slategrey;
 }
 
 .menu_list {
@@ -44,7 +98,12 @@ body {
   flex-flow: row wrap;
   justify-content: flex-end;
   list-style: none;
+  padding: 0px;
   margin: 0;
+  justify-content: center;
+}
+.menu_list li {
+  margin: 20px;
 }
 
 /* Article selection area */
@@ -53,25 +112,60 @@ body {
   flex-wrap: wrap; /* Allows articles to wrap to the next line */
   gap: 50px; /* Space between articles */
   justify-content: center; /* Centers articles horizontally */
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 100px;
+  background-color: whitesmoke;
 }
 
-/*@media (max-width: 800px) {
-    .article_container {
-        padding-left: calc(50% - 3*200px + 150px);
-        padding-right: calc(50% - 3*200px + 150px);
-    }
-}*/
 .article_item {
   flex: 0 0 200px;
-  height: 200px;
-  width: 200px;
-  padding: 0px;
-  background-color: lightblue;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: calc(33.3% - 50px); /* Mobile first :) */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 0px;
+  /*padding: 0px;*/
   border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+.article_item h2 {
+  font-size: 14px;
+}
+.article_item p {
+  font-size: 12px;
+  display: none;
+}
+.article_item img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+  transition: width 0.2s, height 0.2s, filter 0.2s;
+  transition-timing-function: ease-out;
+}
+.article_item div {
+  position: absolute;
+  width: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: none;
+  transition: background-color 1s;
+}
+
+.article_item:hover p {
+  display: block;
+}
+.article_item:hover div {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.article_item:hover img {
+  width: 120%;
+  height: 120%;
+  filter: none;
 }
 
 /* Article popup */
@@ -93,25 +187,71 @@ body {
 .popup_container {
   display: none;
   position: fixed;
-  height: 500px;
+  height: 90%;
   width: 50%;
   min-width: 300px;
   max-width: 800px;
+  overflow-y: auto; /* If content overflow -> vertical scrolling */
+  border-radius: 8px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: lightcyan;
+  background-color: rgba(34, 34, 34, 0.8);
   z-index: 7000; /* > overlay */
 }
 
 .close_menu {
-  background-color: red;
+  /*padding: 0px;*/
+  text-align: left;
 }
 
 .close_button {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .popup_article {
-  background-color: pink;
+  padding: 5%;
+  color: whitesmoke;
+}
+.popup_article img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  transform: translate(5%, 0);
+}
+.popup_article p {
+  font-size: 16px;
+}
+.popup_article figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+.github_link {
+  color: whitesmoke;
+  font-style: bold;
+}
+
+.github_link:hover {
+  color: red;
+  font-size: 16px;
+}
+
+/* Size variations */
+@media (max-width: 768px) {
+  .article-item {
+    max-width: calc(50% - 20px); /* 2 columns on medium screens */
+  }
+  .popup_container {
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .article-item {
+    max-width: 100%; /* Single column on small screens */
+  }
+  .popup_container {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
