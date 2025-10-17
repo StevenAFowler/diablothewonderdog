@@ -172,7 +172,7 @@ html, body {
     align-items: center;
     /*height: none;*/
     /*align-content: flex-start;*/
-    gap: 50px; /* Space between articles */
+    gap: 20px; /* Space between articles */
     padding: 5%;
     background-color: $primary_color_light;
 
@@ -199,7 +199,7 @@ html, body {
     padding: 0px;
     position: relative;
     /*text-align: center;*/
-    // background-color: lightblue;
+    // background-color: whitesmoke ;
 
     @include for-tablet-portrait-up {
         flex: 1 1 300px;
@@ -220,7 +220,7 @@ html, body {
 
     img {
         width: 100%;
-        height: 100%;
+        // height: 100%;
         border-radius: 10%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         /*position: absolute;
@@ -238,17 +238,21 @@ html, body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $primary_color_dark;
+        // color: $primary_color_light;
         background-color: none;
-        transition: background-color 0.5s ease-out;
+        transition: background-color 0.3s ease-out;
         text-align: center;
     }
     h2 {
         font-size: 1.2rem;
+        color: $primary_color_dark;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.0rem;
+        font-weight: bolder;
+        font-style: italic;
         display: none;
+        color: $primary_color_dark;
     }
 }
 .article_item:hover {
@@ -256,7 +260,7 @@ html, body {
         display: block;
     }
     div {
-        background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+        background-color: rgba($color: $primary_color_light, $alpha: 0.8);
     }
     img {
         /*width: 110%;
