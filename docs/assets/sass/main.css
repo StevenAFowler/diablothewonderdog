@@ -141,7 +141,7 @@ html, body {
   /*align-content: flex-start;*/
   gap: 50px; /* Space between articles */
   padding: 5%;
-  background-color: lightcoral;
+  background-color: #bfc2c2;
 }
 @media all and (min-width: 600px) {
   .article_container {
@@ -154,7 +154,6 @@ html, body {
   flex: 1 1 90%;
   min-width: 90%;
   max-width: 100%; /* Mobile first :) */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0px;
   position: relative;
   /*text-align: center;*/
@@ -194,7 +193,7 @@ html, body {
   transform: translate(-50%, -50%);
   color: #3D4040;
   background-color: none;
-  transition: background-color 1s;
+  transition: background-color 0.5s ease-out;
   text-align: center;
 }
 .article_item h2 {
@@ -209,7 +208,7 @@ html, body {
   display: block;
 }
 .article_item:hover div {
-  background-color: rgba(61, 64, 64, 0.7);
+  background-color: rgba(61, 64, 64, 0.8);
 }
 .article_item:hover img {
   /*width: 110%;

@@ -174,7 +174,7 @@ html, body {
     /*align-content: flex-start;*/
     gap: 50px; /* Space between articles */
     padding: 5%;
-    background-color: lightcoral;
+    background-color: $primary_color_light;
 
     @include for-tablet-portrait-up {
         flex-direction: row;
@@ -195,7 +195,7 @@ html, body {
     flex: 1 1 90%;
     min-width: 90%;
     max-width: 100%; /* Mobile first :) */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 0px;
     position: relative;
     /*text-align: center;*/
@@ -240,7 +240,7 @@ html, body {
         transform: translate(-50%, -50%);
         color: $primary_color_dark;
         background-color: none;
-        transition: background-color 1s;
+        transition: background-color 0.5s ease-out;
         text-align: center;
     }
     h2 {
@@ -256,7 +256,7 @@ html, body {
         display: block;
     }
     div {
-        background-color: rgba($color: $primary_color_dark, $alpha: 0.7);
+        background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
     }
     img {
         /*width: 110%;
