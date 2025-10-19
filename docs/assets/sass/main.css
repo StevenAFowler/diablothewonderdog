@@ -40,9 +40,7 @@ html, body {
   flex-direction: column;
   min-height: 100lvh;
   height: 100lvh; /* Take full viewpiont */
-  /*margin: 0;*/
   overflow-y: none; /* If content overflow -> vertical scrolling */
-  /*padding: 0;*/
   justify-content: center;
   text-align: center;
   background-color: lightslategray;
@@ -137,17 +135,14 @@ html, body {
   flex-wrap: nowrap;
   justify-content: center; /* Centers articles horizontally */
   align-items: center;
-  /*height: none;*/
-  /*align-content: flex-start;*/
-  gap: 20px; /* Space between articles */
-  padding: 5%;
+  gap: 50px; /* Space between articles */
+  padding: 10%;
   background-color: #bfc2c2;
 }
 @media all and (min-width: 600px) {
   .article_container {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10%;
   }
 }
 .article_item {
@@ -156,7 +151,6 @@ html, body {
   max-width: 100%; /* Mobile first :) */
   padding: 0px;
   position: relative;
-  /*text-align: center;*/
 }
 @media all and (min-width: 600px) {
   .article_item {
@@ -170,19 +164,30 @@ html, body {
     max-width: 25%;
   }
 }
+@media all and (min-width: 1200px) {
+  .article_item:hover p {
+    display: block;
+  }
+  .article_item:hover div {
+    background-color: rgba(61, 64, 64, 0.8);
+  }
+  .article_item:hover img {
+    filter: none;
+  }
+}
 .article_item img {
   width: 100%;
   border-radius: 10%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   -o-object-fit: cover;
      object-fit: cover;
-  filter: blur(2px);
-  transition: width 0.2s, height 0.2s, filter 0.2s;
-  transition-timing-function: ease-out;
+}
+@media all and (min-width: 1200px) {
+  .article_item img {
+    filter: blur(2px);
+    transition: width 0.2s, height 0.2s, filter 0.2s;
+    transition-timing-function: ease-out;
+  }
 }
 .article_item div {
   width: 80%;
@@ -190,9 +195,16 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: none;
-  transition: background-color 0.3s ease-out;
+  color: #3D4040;
+  background-color: rgba(61, 64, 64, 0.8);
   text-align: center;
+  border-radius: 5%;
+}
+@media all and (min-width: 1200px) {
+  .article_item div {
+    transition: background-color 0.5s ease-out;
+    background-color: transparent;
+  }
 }
 .article_item h2 {
   font-size: 1.2rem;
@@ -200,24 +212,13 @@ html, body {
 }
 .article_item p {
   font-size: 1rem;
-  font-weight: bolder;
-  font-style: italic;
-  display: none;
-  color: #3D4040;
-}
-
-.article_item:hover p {
   display: block;
 }
-.article_item:hover div {
-  background-color: rgba(191, 194, 194, 0.8);
+@media all and (min-width: 1200px) {
+  .article_item p {
+    display: none;
+  }
 }
-.article_item:hover img {
-  /*width: 110%;
-  height: 110%;*/
-  filter: none;
-}
-
 /* Article popup */
 .blur_overlay {
   position: fixed;
@@ -225,13 +226,13 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   display: none;
-  z-index: 6000; /* > Menu < popup */
-  backdrop-filter: blur(8px); /* Adjust blur strength as needed */
-  -webkit-backdrop-filter: blur(8px); /* For Safari and other WebKit browsers */
+  z-index: 6000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .popup_container {
