@@ -173,13 +173,12 @@ html, body {
     /*height: none;*/
     /*align-content: flex-start;*/
     gap: 50px; /* Space between articles */
-    padding: 5%;
+    padding: 10%;
     background-color: $primary_color_light;
 
     @include for-tablet-portrait-up {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 10%;
     }
     @include for-tablet-landscape-up {
 
@@ -213,6 +212,19 @@ html, body {
     }
     @include for-desktop-up {
         // background-color: lightpink;
+        &:hover {
+            p {
+                display: block;
+            }
+            div {
+                background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+            }
+            img {
+                // width: 110%;
+                // height: 110%;
+                filter: none;
+            }
+        }
     }
     @include for-big-desktop-up {
         // background-color: lightskyblue;
@@ -228,9 +240,21 @@ html, body {
         left: 50%;
         transform: translate(-50%, -50%);*/
         object-fit: cover;
-        filter: blur(2px);
-        transition: width 0.2s, height 0.2s, filter 0.2s;
-        transition-timing-function: ease-out;
+        // filter: blur(2px);
+        // transition: width 0.2s, height 0.2s, filter 0.2s;
+        // transition-timing-function: ease-out;
+
+        @include for-tablet-portrait-up {
+        }
+        @include for-tablet-landscape-up {
+        }
+        @include for-desktop-up {
+            filter: blur(2px);
+            transition: width 0.2s, height 0.2s, filter 0.2s;
+            transition-timing-function: ease-out;
+        }
+        @include for-big-desktop-up {
+        }
     }
     div {
         width: 80%;
@@ -239,31 +263,50 @@ html, body {
         left: 50%;
         transform: translate(-50%, -50%);
         color: $primary_color_dark;
-        background-color: none;
-        transition: background-color 0.5s ease-out;
+        background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+        // transition: background-color 0.5s ease-out;
         text-align: center;
+        @include for-tablet-portrait-up {
+        }
+        @include for-tablet-landscape-up {
+        }
+        @include for-desktop-up {
+            transition: background-color 0.5s ease-out;
+            background-color: transparent;
+        }
+        @include for-big-desktop-up {
+        }
     }
     h2 {
         font-size: 1.2rem;
     }
     p {
         font-size: 1rem;
-        display: none;
-    }
-}
-.article_item:hover {
-    p {
         display: block;
-    }
-    div {
-        background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
-    }
-    img {
-        /*width: 110%;
-        height: 110%;*/
-        filter: none;
+        @include for-tablet-portrait-up {
+        }
+        @include for-tablet-landscape-up {
+        }
+        @include for-desktop-up {
+            display: none;
+        }
+        @include for-big-desktop-up {
+        }
     }
 }
+// .article_item:hover {
+//     p {
+//         display: block;
+//     }
+//     // div {
+    //     background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+    // }
+    // img {
+    //     /*width: 110%;
+    //     height: 110%;*/
+    //     filter: none;
+    // }
+// }
 /* Article popup */
 .blur_overlay {
     position: fixed;
