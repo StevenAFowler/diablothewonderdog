@@ -37,10 +37,10 @@
         <!-- Articles selection -->
         <div class="article_container">
             <div class="article_item" onclick="open_article('artID_01')">
-                <img src="assets/images/art_itm_01.jpg">
+                <img src="assets/images/art_itm_01.png">
                 <div>
                     <h2>Lego brick colours</h2>
-                    <p class="header_hide">Exploring the colours of Lego bricks since 1949...</p>
+                    <p class="header_hide">Exploring Lego bricks since 1949...</p>
                 </div>
             </div>
            <div class="article_item" onclick="open_article('artID_02')">
@@ -125,8 +125,62 @@
                     <button class="close_button" onclick="close_article('artID_01')">X</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Article 1</h1>
-                    <p>Awesome stuff!</p>
+                    <h1>Exploring Lego bricks since 1949...</h1>
+                    <img src="assets/images/art_itm_01.png">
+                    <figcaption>All the Lego brick colours. Saturation vs Hue, fill is brick colour.</figcaption>
+                    <p>The following is an investigation into lego brick. The idea was inspired by Hanna Yan Han’s article <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">here</a>. The data for this is from <a href="https://rebrickable.com/">rebrickable</a>. I created a local MySQL DB to access this data (DB set up notes are <a href="https://github.com/StevenAFowler/Lego_data/blob/main/Notes.md">here</a>).</p>
+                    
+                    <a href="https://github.com/StevenAFowler/Lego_data/tree/main/Lego_brick_colours" target="_blank" rel="noopener noreferrer">gihub data</a> - source 
+                    <a href="Brick_colours.html" target="_blank" rel="noopener noreferrer">FULL INVESTIGATION</a> - for full report
+
+                    <h2>What I did</h2>
+                    <ul>
+                        <li>I explored a Lego database that I previously created (here)</li>
+                        <li>Initial focus was an exploration into Lego brick colours.</li>
+                        <li>This led to several questions being raised regarding colours and trends that could be seen over time.</li>
+                        <li>So, a further investigation looking into three of the previous observations.</li>
+                    </ul>
+
+                    <h2>Why I did it</h2>
+                    This project was undertaken based on an inspiration from <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">Hanna Yan Han</a>, it provided an interesting set of data to execute my data analysis skills and my life long interest in Lego.
+
+                    <h2>What I learnt</h2>
+                    <h3>From focusing on the colour of Lego Bricks:</h3>
+                    <ul>
+                        <li>There have been a total of 273 colours between 1949 and 2025.</li>
+                        <li>There is a void in colours with a purple/pink and green Hue and high Saturation.</li>
+                        <li>The number of colours steadily increased from 8 to 30 between 1949 to 1995.</li>
+                        <li>Then between 1997 to 2006 the number of colours quickly increased to over 125.</li>
+                        <li>Then in 2007 there is an abrupt decrease to around 75 colours which is maintained until 2025.</li>
+                    </ul>
+                    <img src="assets/images/art_01_1.png">
+                    <figcaption>Number of Lego brick colours used per year. Fill is brick colour.</figcaption>
+
+                    
+                    <figcaption>% of bricks by colour in theme from 1958 to 1967. The number of sets per theme is labelled in the centre of each plot.</figcaption>
+                    <ul>
+                        <li>The sets with the most parts were Deluxe Building Set and Starter Train Set with Motor</li>
+                        <li>There were 2 sets in database that seem to be place holders for unused parts (Unused Modulex parts… & Unused Parts Database Set…)</li>
+                        <li>It can also be seen that themes in this period sometimes related to manufacture i.e Samsonite</li>
+                        <li></li>
+                    </ul>
+                    <h3>Looking at sets between 1958 and 1967</h3>
+                    <img src="assets/images/art_01_2.png">
+
+                    <h3>The Lime bricks from the 80’s that stood out</h3>
+                    <ul>
+                        <li>The lime coloured bricks were calls Fabuland Lime and featured in 5 sets</li>
+                        <li>Parts included watering can, bathtub and a toilet</li>
+                    </ul>
+                    
+                    <h3>Data trends in the 2000’s</h3> 
+                    <ul>
+                        <li>Generally, there is an increase in themes, sets and colours starting in the mid-1900’s.</li>
+                        <li>There is also a double peak in new sets in 2000 and 2015, with a dip in number in 2005.</li>
+                        <li>Based on common knowledge about Lego business struggles at this time and there recovery some correlations were proposed, but without further data could not be verified.</li>
+                    </ul>
+                    <img src="assets/images/art_01_3.png">
+                    <figcaption>Number of Lego sets introduced per year.</figcaption>
                 </div>
             </div>
             <!--Article 02-->
