@@ -264,8 +264,22 @@ html, body {
   }
 }
 .close_menu {
-  /*padding: 0px;*/
-  text-align: left;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #3D4040;
+  text-align: center;
+}
+.close_menu button {
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5%;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.close_menu button:hover {
+  background-color: darkgrey;
 }
 
 .close_button {
@@ -280,24 +294,72 @@ html, body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10%;
+  border-radius: 2.5%;
+  margin: auto;
+  display: block;
   /*transform: translate(5%, 0);*/
 }
-.popup_article p, .popup_article figcaption, .popup_article ul, .popup_article h1, .popup_article h2, .popup_article h3, .popup_article a {
+@media all and (min-width: 900px) {
+  .popup_article img {
+    max-height: 50%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .popup_article img {
+    width: 85%;
+  }
+}
+@media all and (min-width: 1800px) {
+  .popup_article img {
+    width: 75%;
+  }
+}
+.popup_article p, .popup_article figcaption, .popup_article ul, .popup_article h2, .popup_article h3, .popup_article a {
   margin-bottom: 2.5%;
-  margin-top: 2.5%;
+  margin-top: 5%;
+}
+@media all and (min-width: 600px) {
+  .popup_article p, .popup_article figcaption, .popup_article ul, .popup_article h2, .popup_article h3, .popup_article a {
+    margin-top: 3.5%;
+  }
+}
+@media all and (min-width: 900px) {
+  .popup_article p, .popup_article figcaption, .popup_article ul, .popup_article h2, .popup_article h3, .popup_article a {
+    margin-top: 2.5%;
+  }
 }
 .popup_article h1 {
   font-size: 1.5rem;
+  margin-top: 0%;
+  color: whitesmoke;
+}
+@media all and (min-width: 1800px) {
+  .popup_article h1 {
+    font-size: 2rem;
+  }
 }
 .popup_article h2 {
   font-size: 1.2rem;
+  color: whitesmoke;
+}
+@media all and (min-width: 1800px) {
+  .popup_article h2 {
+    font-size: 1.6rem;
+  }
 }
 .popup_article a {
   color: #bfc2c2;
   font-style: bold;
 }
 .popup_article a:hover {
+  color: red;
+}
+.popup_article .large_link {
+  color: #bfc2c2;
+  font-style: bold;
+  text-align: center;
+}
+.popup_article .large_link:hover {
   color: red;
   font-size: 1.5rem;
 }

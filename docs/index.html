@@ -39,22 +39,22 @@
             <div class="article_item" onclick="open_article('artID_01')">
                 <img src="assets/images/art_itm_01.png">
                 <div>
-                    <h2>Lego brick colours</h2>
-                    <p class="header_hide">Exploring Lego bricks since 1949...</p>
+                    <h2>Boiled eggs?</h2>
+                    <p class="header_hide">Diffusion modeling to find the perfect boiled egg</p>
                 </div>
             </div>
            <div class="article_item" onclick="open_article('artID_02')">
-                <img src="assets/images/art_itm_02.webp">
+                <img src="assets/images/art_itm_02.png">
                 <div>
                     <h2>Lego database</h2>
                     <p class="header_hide">Building a Lego database based on Rebrickable...</p>
                 </div>
             </div>
             <div class="article_item" onclick="open_article('artID_03')">
-                <img src="assets/images/art_itm_03.jpg">
+                <img src="assets/images/art_itm_03.svg">
                 <div>
-                    <h2>Boiled eggs?</h2>
-                    <p class="header_hide">Diffusion modeling to find the perfect boiled egg</p>
+                    <h2>Lego brick investigation</h2>
+                    <p class="header_hide">Exploring Lego bricks since 1949...</p>
                 </div>
             </div>
             <div class="article_item" onclick="open_article('artID_04')">
@@ -122,11 +122,11 @@
             <!--Article 01-->
             <div class="popup_container" id="artID_01">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_01')">X</button>
+                    <button class="close_button" onclick="close_article('artID_01')">return</button>
                 </div>
                 <div class="popup_article">
                     <h1>Exploring Lego bricks since 1949...</h1>
-                    <img src="assets/images/art_itm_01.png">
+                    <img src="assets/images/art_itm_01.svg">
                     <figcaption>All the Lego brick colours. Saturation vs Hue, fill is brick colour.</figcaption>
                     <p>The following is an investigation into lego brick. The idea was inspired by Hanna Yan Han’s article <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">here</a>. The data for this is from <a href="https://rebrickable.com/">rebrickable</a>. I created a local MySQL DB to access this data (DB set up notes are <a href="https://github.com/StevenAFowler/Lego_data/blob/main/Notes.md">here</a>).</p>
                     
@@ -142,7 +142,7 @@
                     </ul>
 
                     <h2>Why I did it</h2>
-                    This project was undertaken based on an inspiration from <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">Hanna Yan Han</a>, it provided an interesting set of data to execute my data analysis skills and my life long interest in Lego.
+                    <p>This project was undertaken based on an inspiration from <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">Hanna Yan Han</a>, it provided an interesting set of data to execute my data analysis skills and my life long interest in Lego.</p>
 
                     <h2>What I learnt</h2>
                     <h3>From focusing on the colour of Lego Bricks:</h3>
@@ -153,7 +153,7 @@
                         <li>Then between 1997 to 2006 the number of colours quickly increased to over 125.</li>
                         <li>Then in 2007 there is an abrupt decrease to around 75 colours which is maintained until 2025.</li>
                     </ul>
-                    <img src="assets/images/art_01_1.png">
+                    <img src="assets/images/art_01_1.svg">
                     <figcaption>Number of Lego brick colours used per year. Fill is brick colour.</figcaption>
 
                     
@@ -165,7 +165,7 @@
                         <li></li>
                     </ul>
                     <h3>Looking at sets between 1958 and 1967</h3>
-                    <img src="assets/images/art_01_2.png">
+                    <img src="assets/images/art_01_2.svg">
 
                     <h3>The Lime bricks from the 80’s that stood out</h3>
                     <ul>
@@ -179,21 +179,21 @@
                         <li>There is also a double peak in new sets in 2000 and 2015, with a dip in number in 2005.</li>
                         <li>Based on common knowledge about Lego business struggles at this time and there recovery some correlations were proposed, but without further data could not be verified.</li>
                     </ul>
-                    <img src="assets/images/art_01_3.png">
+                    <img src="assets/images/art_01_3.svg">
                     <figcaption>Number of Lego sets introduced per year.</figcaption>
                 </div>
             </div>
             <!--Article 02-->
             <div class="popup_container" id="artID_02">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_02')">X</button>
+                    <button class="close_button" onclick="close_article('artID_02')">return</button>
                 </div>
                 <div class="popup_article">
                     <h1>lego database</h1>
                     <img src="assets/images/rebrickableDB_schema_v3.png">
                     <figcaption>Schema (v3) of Lego database from rebrickable.</figcaption>
                     <p>Lego is awesome! So when I discovered there was a data available to construct a database based on all the sets made since 1949, I could not resist having a look. So, the first step to exploring this data was to build a local database that I could query.</p>
-                    <a href="https://github.com/StevenAFowler/Lego_data/blob/main/Notes.md" target="_blank" rel="noopener noreferrer">gihub data</a> - for more detail
+                    <h2 class = "large_link"> <a href="https://github.com/StevenAFowler/Lego_data/blob/main/Notes.md" target="_blank" rel="noopener noreferrer">gihub data - for more detail</a></h2>
                     <h2>What I did</h2>
                     <p>Construction of the database was done in 5 stages:</p>
                     <ul>
@@ -214,11 +214,31 @@
             <!--Article 03-->
             <div class="popup_container" id="artID_03">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_03')">X</button>
+                    <button class="close_button" onclick="close_article('artID_03')">return</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Boiled eggs?</h1>
-                    <p>Example of solving diffusion problems</p>
+                    <h1>Exploring Lego bricks since 1949...</h1>
+                    <p>The following is an investigation into lego brick. The idea was inspired by Hanna Yan Han’s article <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">here</a>. 
+                        The data for this is from <a href="https://rebrickable.com/">rebrickable</a>. 
+                        I created a local MySQL DB to access this data (DB set up notes are <a href="https://github.com/StevenAFowler/Lego_data/blob/main/Notes.md">here</a>).</p>
+                    <h2>Find out more...</h2>
+                    <p>The report on this investigation is here:</p>
+                    <h2 class = "large_link"><a href="Brick_colours.html" target="_blank" rel="noopener noreferrer">FULL INVESTIGATION - for full report</a></h2>
+                    <p>Or access the data on github:</p>
+                    <h2 class = "large_link"><a href="https://github.com/StevenAFowler/Lego_data/tree/main/Lego_brick_colours" target="_blank" rel="noopener noreferrer">gihub data - source</a></h2> 
+                    <h2>Example plots from the report</h2>
+                    
+                    <img src="assets/images/art_01_4.svg">
+                    <figcaption>All the Lego brick colours. Saturation vs Hue, fill is brick colour.</figcaption>
+                    
+                    <img src="assets/images/art_01_1.svg">
+                    <figcaption>Number of Lego brick colours used per year. Fill is brick colour.</figcaption>
+
+                    <img src="assets/images/art_01_2.svg">
+                    <figcaption>% of bricks by colour in theme from 1958 to 1967. The number of sets per theme is labelled in the centre of each plot.</figcaption>
+            
+                    <img src="assets/images/art_01_3.svg">
+                    <figcaption>Number of Lego sets introduced per year.</figcaption>
                 </div>
             </div><!--Article 04-->
             <div class="popup_container" id="artID_04">

@@ -316,8 +316,23 @@ html, body {
     }
 }
 .close_menu {
-    /*padding: 0px;*/
-    text-align: left;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    // z-index: 5000; /* > main page < overlay */
+    background-color: $primary_color_dark;
+    text-align: center;
+    button {
+        margin: 1%;
+        padding: 1%;
+        border-radius: 5%;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+            background-color: darkgrey;
+        }
+    }
 }
 .close_button {
     background-color: lightgrey;
@@ -328,24 +343,67 @@ html, body {
     img {
         width: 100%;
         object-fit: cover;
-        border-radius: 10%;
+        border-radius: 2.5%;
+        margin: auto;
+        display: block;
         /*transform: translate(5%, 0);*/
+        @include for-tablet-portrait-up {
+        }
+        @include for-tablet-landscape-up {
+            max-height: 50%;
+        }
+        @include for-desktop-up {
+            width: 85%;
+        }
+        @include for-big-desktop-up {
+            width: 75%;
+        }
     }
-    p, figcaption, ul, h1, h2, h3, a {
+    p, figcaption, ul, h2, h3, a {
         margin-bottom: 2.5%;
-        margin-top: 2.5%;
+        margin-top: 5%;
+
+        @include for-tablet-portrait-up {
+            margin-top: 3.5%;
+        }
+        @include for-tablet-landscape-up {
+            margin-top: 2.5%;
+
+        }
+        @include for-desktop-up {
+        }
+        @include for-big-desktop-up {
+        }
     }
     h1 {
         font-size: 1.5rem;
+        margin-top: 0%;
+        color: whitesmoke;
+        @include for-big-desktop-up {
+            font-size: 2rem;
+        }
     }
     h2 {
         font-size: 1.2rem;
+        color: whitesmoke;
+        @include for-big-desktop-up {
+            font-size: 1.6rem;
+        }
     }
     a {
         color: $primary_color_light;
         font-style: bold;
     }
     a:hover {
+        color: red;
+        // font-size: 1.5rem;
+    }
+    .large_link {
+        color: $primary_color_light;
+        font-style: bold;
+        text-align: center;
+    }
+    .large_link:hover {
         color: red;
         font-size: 1.5rem;
     }
