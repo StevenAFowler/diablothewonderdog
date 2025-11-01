@@ -27,8 +27,12 @@ Object.values(path_objects).forEach(obj => {
 });
 
 // Reload at top of page
-window.addEventListener('load', function() {
-    setTimeout(() => {
+window.onbeforeunload = function () {
         window.scrollTo(0, 0);
-    }, 0);
-});
+      };
+
+// window.addEventListener('load', function() {
+//     setTimeout(() => {
+//         window.scrollTo(0, 0);
+//     }, 0);
+// });
