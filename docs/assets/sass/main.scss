@@ -1,5 +1,5 @@
 
-/* Varaible declaration */
+/* Variable declaration */
 $primary_color_light: #bfc2c2;
 $primary_color_dark: #3D4040; // rgb(34,34,34);
 $primary_font: 'Courier New', monospace;
@@ -56,29 +56,53 @@ html, body {
 
 /* Layout / containers */
 
+/* Loading screen */
+#loading_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100lvh;
+    height: 100lvh;
+    background-color: black;
+    color: $primary_color_light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 4000; /* Ensure it is above all other content */
+    opacity: 1;
+    pointer-events: none;
+    // transition: opacity 3s ease-in-out, display 3s allow-discrete;
+}
+
+// #loading_screen.fade-out {
+//     opacity: 0;
+//     display: none;
+// }
+
 /* Landing area */
-.landing_container {
+#landing_container {
     display: flex;
     flex-direction: column;
     min-height: 100lvh;
-    height: 100lvh; /* Take full viewpiont */
+    height: 100lvh; /* Take full viewpoint */
     overflow-y: none; /* If content overflow -> vertical scrolling */
     justify-content: center;
     text-align: center;
     background-color: lightslategray;
 }
-.landing_item {
+#landing_item {
     flex-grow: 1;
     background-color: black;
     max-height: 100lvh;
     overflow: hidden;
-    position: relative;
+    // position: relative;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: 0;
-        animation: fade_in 3s ease-in-out 1s forwards;
+        opacity: 0.0;
+        animation: fade_in 3s ease-in-out 2s forwards;
     }
     svg {
         --path_stroke_size: 1; /* .26458437 */
@@ -102,19 +126,83 @@ html, body {
         }
     }
 }
-.svg_dog {
-    animation: draw_line 5s linear 1s forwards;
+#landing_align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    min-width: 300px;
 }
-.svg_cir {
+#landing_content {
+    position: relative;
+    // border-top: $primary_color_light solid 2px;
+    // border-bottom: $primary_color_light solid 2px;
+    // max-height: 0;
+    // transition: height 5s ease-out;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-100%);
+        height: 50%;
+        width: 2px;
+        background-color: $primary_color_light;
+    }
+}
+#landing_text.animated{
+    animation: expand_title 2.5s ease-out 0s forwards;
+}
+@keyframes expand_title {
+    0% {
+        max-height: 0;
+        padding: 0rem;
+    }
+    30% {
+        max-height: 500px;
+    }
+    100% {
+        padding: 2rem;
+    }
+}
+#landing_text
+{
+    color: $primary_color_light;
+    text-shadow: 2px 2px 4px #000000;
+    border-top: $primary_color_light solid 2px;
+    border-bottom: $primary_color_light solid 2px;
+    padding: 2rem;
+
+    max-height: 500px;
+    overflow: hidden;
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+#svg_dog.animate {
+    animation: draw_line 2s linear 1s forwards;
+}
+#svg_cir.animate {
     animation: draw_line 0.5s linear 3s forwards;
 }
-.svg_dow {
+#svg_dow.animate {
     animation: draw_line 0.4s linear 3.5s forwards;
 }
-.svg_l11, .svg_l12, .svg_l21, .svg_l22 {
+#svg_l11.animate, #svg_l12.animate, #svg_l21.animate, #svg_l22.animate {
     animation: draw_line 0.5s linear 3.9s forwards;
 }
-.svg_txt2, .svg_txt3, .svg_txt4 {
+#svg_txt2.animate, #svg_txt3.animate, #svg_txt4.animate {
     opacity: 0;
     animation: fade_txt 1s ease-in-out 0s forwards
 }
@@ -135,7 +223,7 @@ html, body {
 }
 
 /* Menu */
-.sticky_container {
+#sticky_container {
     position: sticky;
     top: 0;
     width: 100%;
@@ -157,7 +245,7 @@ html, body {
     }
 }
 /* Article selection area */
-.article_container {    
+#article_container {    
     display: flex;
     flex-direction: column; /* Allows articles to wrap to the next line */
     flex-wrap: nowrap;
@@ -275,7 +363,7 @@ html, body {
     }
 }
 /* Article popup */
-.blur_overlay {
+#blur_overlay {
     position: fixed;
     top: 0;
     left: 0;
