@@ -8,7 +8,9 @@
 //                       l22: '#svg_l22'}
 
 // Loading screen variables
-var loading_screen = document.getElementById('loading_screen');
+const loading_screen = document.getElementById('loading_screen');
+const overlay = document.getElementById('blur_overlay');
+
 var min_load_time = 500; // in ms   
 var elapsed_time = false;
 var loaded = false;
@@ -53,12 +55,21 @@ window.onbeforeunload = function () {
 function open_article(artID) 
 {
     document.getElementById(artID).style.display='block';
-    document.querySelector('#blur_overlay').style.display='block';
+    overlay.style.display='block';
     document.querySelector('body').style.overflow='hidden';
 }
 function close_article(artID)
 {
     document.getElementById(artID).style.display='none';
-    document.querySelector('#blur_overlay').style.display='none';
+    overlay.style.display='none';
     document.querySelector('body').style.overflow='auto';
 }
+function close_all_popups(){
+    const popups = document.querySelectorAll('.popup_container');
+    popups.forEach(popup => {
+        popup.style.display='none';
+    })
+    overlay.style.display='none';
+    document.querySelector('body').style.overflow='auto';
+}
+overlay.addEventListener('click', close_all_popups);
