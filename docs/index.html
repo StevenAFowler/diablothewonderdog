@@ -4,6 +4,7 @@
 		<title>STEVEN FOWLER - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/sass/main.css">
+        <link rel="icon" href="assets/images/gloop_favicon.ico">
 		<script async src="assets/js/main.js"></script>
 	</head>
     <body>
@@ -90,7 +91,7 @@
             <div class="article_item" onclick="open_article('artID_06')">
                 <img src="assets/images/art_itm_06.png">
                 <div>
-                    <h2>Geographical anlaysis</h2>
+                    <h2>Geographical analysis</h2>
                     <p>Demo of data on map</p>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                 <img src="assets/images/art_itm_07.png">
                 <div>
                     <h2>Statistics inference</h2>
-                    <p>Classificaiton of data</p>
+                    <p>classification of data</p>
                 </div>
             </div>
             <div class="article_item" onclick="open_article('artID_08')">
@@ -128,14 +129,51 @@
             <!--About me-->
             <div class="popup_container" id="artID_me">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_me')">X</button>
+                    <button class="close_button" onclick="close_article('artID_me')">back</button>
                 </div>
                 <div class="popup_article">
+                    <img class="img_header" src="assets/images/sunset.jpg">
                     <h1>Who am I...</h1>
-                    <h3><i>Inquisitive, Collaborative, Innovative</i></h3>
-                    <p>An engineer and scientist focused on leading the development of solutions to deliver innovative and differentiating award-winning products. Striving to solve technical challenges by applying multidisciplinary knowledge to facilitate, lead teams and mentor individuals in their areas of expertise. Passionate about communication, distilling complex ideas into simple messages. Data driven, basing decisions and strategies on a foundation of sound information.</p>
-                    <p>More than 15 years experience in solving technical problems in collaborative environments. A passion for data </p>
+                    <h2><i>Inquisitive, Collaborative, Innovative</i></h2>
+                    <hr>
+                    <p>An <mark>engineer</mark> and <mark>scientist</mark> focused on leading the development of solutions to deliver innovative and differentiating award-winning products. 
+                        Striving to solve technical challenges by applying multidisciplinary knowledge to facilitate, lead teams and mentor individuals in their areas of expertise. 
+                        Passionate about communication, distilling complex ideas into simple messages. Data driven, basing decisions and strategies on a foundation of sound information.</p>
+                    <h2>My story</h2>
+                    <hr>
+                    <h3>Data and programming</h3>
+                    <p>
+                        The foundation of my interests in data science and programming can be traced back to my studies in engineering where I used <mark>Pascal</mark> to control robots, <mark>ABAQUS</mark> for FEA and gained a deeper understanding into the maths of modelling and simulation. 
+                        During my PhD I continued to write programs to support my lab work, for example I created an image analysis software to calculate contact angles on chemically modified surfaces. 
+                        This was my first insight into <mark>Object Oriented Programming</mark> using the likes of <mark>Java</mark> and <mark>C++</mark>.
+                    </p>
+                    <p>
+                        While managing a team of engineers and scientists developing pathology instruments we needed to process large quantities of time series data being generated in the lab for algorithm development. 
+                        As part of this process I shifted the companies' prolific use of <mark>VBA</mark> (Excel) to <mark>MatLAB</mark> by first demonstrating proof of principle in <mark>Octave</mark>. 
+                        The next development milestone was when we needed to conduct a formal verification of this pathology instrument. 
+                        This required brushing up on my statistics and updating my knowledge to meet compliance to CLSI (<a hreh="https://clsi.org/" target="_blank" rel="noopener noreferrer">link</a>) standards for FDA submission, while also promoting the use of <mark>R</mark> for all statistical analysis. 
+                    </p>
+                    <p>
+                        Based on the foundation and experiences mentioned above, I have continued to develop and apply my analytical and modelling skills in <mark>Python</mark> while developing products for the pharmaceutical and medical device industries. 
+                        Further example applications of data science and analytics include: 
+                    </p>
+                    <ul>
+                        <li>Simulating the chemical degradation and mass transport in primary packaging to support design decisions to enhance drug product shelflife.</li>
+                        <li>Integrating fluid modelling and Monte Carlo sampling to better understand and optimise the manufacture of pharmaceutical equipment.</li>
+                        <li>Application of statistical techniques that comply with industrial standards to formally verify the performance of products.</li>
+                        <li>Data wrangling and analysis to support investigations into colleagues' scientific hypotheses.</li>
+                        <li>Advocate, support and mentor scientists and engineers in experimental design, statistical practices and data analysis.</li>
+                    </ul>
+                    <hr>
+                    <h3>As an engineer and scientist</h3>
+                    <p>
+                        As an engineer and scientist I’ve led and managed multiple projects with experience of developing products from concept through to market. 
+                        Many of these products have been for the pharmaceutical and medical device industries with a strong focus on injection moulding and sheet metal manufacturing with integrated electronics and software. 
+                        Example product areas include: IVDs, drug delivery, optical instruments and bio-processing equipment.  
+                        I’m also an experienced project manager having led, implemented and worked within various flavours of Agile and phase-gate development processes.
+                    </p>
                     <p>Qualified as an engineer (1st class) with a PhD sensor technology.</p>
+                    <img class="img_header" src="assets/images/clover_point.jpg">
                 </div>
             </div>
             <!--Website notes-->
@@ -145,7 +183,7 @@
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/boat_to_vic.jpeg">
-                    <h1>This is diablo the wonder dog</h1>
+                    <h1>Diablo the wonder dog</h1>
                     <img src="assets/images/diablo.jpg">
                     <h1>Disclaimers and credit</h1>
                     <ul>
@@ -220,7 +258,7 @@
                     <button class="close_button" onclick="close_article('artID_03')">back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="assets/images/art_01_1.svg">
+                    <img class="img_header" src="assets/images/bricks_SW_02.jpg">
                     <h1>Lego bricks since 1949</h1>
                     <p>This investigation looks into a Lego brick database to explore how lego bricks have changes since it conception in 1949.</p>
                     <h2>Overview</h2>
@@ -288,8 +326,8 @@
                     <button class="close_button" onclick="close_article('artID_07')">X</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Statisicatial infernece</h1>
-                    <p>Classificaiton of data - Engineering example?</p>
+                    <h1>Statistical inference</h1>
+                    <p>Classification of data - Engineering example?</p>
                 </div>
             </div>
             <!--Article 08-->

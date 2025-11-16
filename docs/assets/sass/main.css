@@ -396,8 +396,8 @@ html, body {
 }
 #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article ul, #blur_overlay .popup_container .popup_article li, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a {
   color: #3D4040;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 @media all and (min-width: 600px) {
   #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article ul, #blur_overlay .popup_container .popup_article li, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a {
