@@ -4,7 +4,7 @@ $primary_color_light: #bfc2c2;
 $primary_color_dark: #3D4040; // rgb(34,34,34);
 $highlight_colour_orange: #d9230f;
 // $primary_font: 'Courier New', monospace;
-$primary_font: Verdana, Arial, sans-serif;
+$primary_font: 'Satoshi', Arial, sans-serif;
 
 /* breakpoints */
 @mixin for-phone-only {
@@ -31,6 +31,14 @@ html, body, div, p, ul, li, h1, h2, h3 {
     font-family: $primary_font;
     color: $primary_color_light;
 }
+html, body, div, p, ul, li {
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
 
 /* Default for mobile */
 
@@ -71,7 +79,7 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    z-index: 4000; /* Ensure it is above all other content */
+    z-index: 20000; /* Ensure it is above all other content */
     opacity: 1;
     pointer-events: none;
     // transition: opacity 3s ease-in-out, display 3s allow-discrete;
@@ -86,8 +94,8 @@ html, body {
 #landing_container {
     display: flex;
     flex-direction: column;
-    min-height: 100lvh;
-    height: 100lvh; /* Take full viewpoint */
+    min-height: 30lvh;
+    height:70lvh; /* Take full viewpoint */
     overflow-y: none; /* If content overflow -> vertical scrolling */
     justify-content: center;
     text-align: center;
@@ -96,7 +104,7 @@ html, body {
 #landing_item {
     flex-grow: 1;
     background-color: black;
-    max-height: 100lvh;
+    max-height: 100%;
     overflow: hidden;
     // position: relative;
     svg {
@@ -141,9 +149,10 @@ html, body {
 }
 #landing_align {
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%);
+    transform: translateX(-50%);
     width: 80%;
     min-width: 300px;
 }
@@ -266,7 +275,7 @@ html, body {
             background-color: $primary_color_light;
             padding: 10%;
             border: none;
-            border-radius: 20%;
+            border-radius: 5%;
             box-shadow: 0px 0px 2px 2px $primary_color_light;
             &:hover {
                 color: $primary_color_light;
@@ -285,7 +294,9 @@ html, body {
     justify-content: center; /* Centers articles horizontally */
     align-items: center;
     gap: 50px; /* Space between articles */
-    padding: 10%;
+    // padding: 10%;
+    padding-top: 5%;
+    padding: 5% 5%;
     background-color: $primary_color_light;
 
     @include for-tablet-portrait-up {
@@ -303,16 +314,21 @@ html, body {
     }
 
     .article_item {
-        flex: 1 1 90%;
+        flex: 1 1 90%;  // Can grow, shrink with ideal 90% size
         min-width: 90%;
-        max-width: 100%; /* Mobile first :) */
+        max-width: 90%; // Mobile first :) - only 1 column
+        // height: auto;
+        aspect-ratio: 4 / 3;
         padding: 0px;
         position: relative;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
         // background-color: lightblue;
+
         @include for-tablet-portrait-up {
-            flex: 1 1 300px;
+            flex: 1 1 400px;
             min-width: 200px;
-            max-width: 30%;
+            max-width: 40%;     // Only 2 cards presented
             // background-color: lightgreen;
         }
         @include for-tablet-landscape-up {
@@ -326,61 +342,65 @@ html, body {
                     display: block;
                 }
                 div {
-                    background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+                    // background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
                 }
                 img {
                     // width: 110%;
                     // height: 110%;
-                    filter: none;
+                    filter: blur(1px);
                 }
             }
         }
         @include for-big-desktop-up {
             // background-color: lightskyblue;
         }
-
+        .container_image {
+            width: 100%;
+            height: 100%;
+        }
         img {
             width: 100%;
-            // height: 100%;
-            border-radius: 10%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            object-fit: cover;
+            height: 100%;
+            border-radius: 0.5rem;
+            object-fit: fill;
             @include for-tablet-portrait-up {
             }
             @include for-tablet-landscape-up {
             }
             @include for-desktop-up {
-                filter: blur(2px);
-                transition: width 0.2s, height 0.2s, filter 0.2s;
-                transition-timing-function: ease-out;
+                // filter: blur(2px);
+                // transition: width 0.2s, height 0.2s, filter 0.2s;
+                // transition-timing-function: ease-out;
             }
             @include for-big-desktop-up {
             }
         }
-        div {
-            width: 80%;
-            padding: 2.5%;
+        .container_header { // Text in item / card
+            width: calc(100% - 2*0.5rem);     // 100% width - 2x 2.5% padding
+            padding: 0.5rem;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            bottom: 0;
+            // top: 0;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
             color: $primary_color_dark;
             background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
             text-align: center;
-            border-radius: 5%;
+            border-radius: 0.5rem;
             @include for-tablet-portrait-up {
             }
             @include for-tablet-landscape-up {
             }
             @include for-desktop-up {
-                transition: background-color 0.5s ease-out;
-                background-color: transparent;
+                // transition: background-color 0.5s ease-out;
+                // background-color: transparent;
             }
             @include for-big-desktop-up {
             }
         }
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.0rem;
         }
         p {
             font-size: 1rem;
@@ -443,12 +463,20 @@ html, body {
         }
         .close_menu {
             position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             top: 0;
             width: 100%;
             // z-index: 5000; /* > main page < overlay */
             background-color: $primary_color_dark;
             // background-color: transparent;
-            text-align: right;
+            // text-align: right;
+            h1 {
+                font-size: 1.5rem;
+                margin-left: 5%;
+                padding: 0.5rem 0.5rem;
+            }
             button {
                 margin: 1%;
                 margin-right: 5%;
@@ -477,6 +505,7 @@ html, body {
                 display: block;
                 /*transform: translate(5%, 0);*/
                 @include for-tablet-portrait-up {
+        
                 }
                 @include for-tablet-landscape-up {
                     max-height: 50%;
@@ -498,7 +527,6 @@ html, body {
                 }
                 @include for-tablet-landscape-up {
                     margin-top: 2.5%;
-
                 }
                 @include for-desktop-up {
                 }
@@ -546,7 +574,7 @@ html, body {
                 border-style: solid;
                 border: $primary_color_dark;
                 border-width: thin;
-                padding: 2%;
+                padding: 1% 2% 1% 2%;
                 border-radius: 5%;
                 &:hover{
                     background-color: $highlight_colour_orange;
@@ -560,6 +588,17 @@ html, body {
                 width: 100%;
                 height: 100px;
                 object-fit: cover;
+
+                @include for-tablet-portrait-up {
+                    
+                }
+                @include for-tablet-landscape-up {
+                    height: 200px;
+                }
+                @include for-desktop-up {
+                }
+                @include for-big-desktop-up {
+                }
             }
         }
     }
