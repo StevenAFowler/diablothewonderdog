@@ -220,7 +220,6 @@ html, body {
   flex-direction: column; /* Allows articles to wrap to the next line */
   flex-wrap: nowrap;
   justify-content: center; /* Centers articles horizontally */
-  align-items: center;
   gap: 50px; /* Space between articles */
   padding-top: 5%;
   padding: 5% 5%;
@@ -234,7 +233,7 @@ html, body {
 }
 #article_container .article_item {
   flex: 1 1 90%;
-  min-width: 90%;
+  min-width: 300px;
   max-width: 90%;
   aspect-ratio: 4/3;
   padding: 0px;
@@ -245,7 +244,7 @@ html, body {
 @media all and (min-width: 600px) {
   #article_container .article_item {
     flex: 1 1 400px;
-    min-width: 200px;
+    min-width: 300px;
     max-width: 40%;
   }
 }
@@ -265,13 +264,15 @@ html, body {
 #article_container .article_item .container_image {
   width: 100%;
   height: 100%;
+  bottom: 0;
+  position: absolute;
 }
 #article_container .article_item img {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #article_container .article_item .container_header {
   width: calc(100% - 1rem);
