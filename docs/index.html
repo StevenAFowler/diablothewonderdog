@@ -24,7 +24,7 @@
                     <div id="landing_content">
                         <div id="landing_text">
                             <h1>Data, science, engineering</h1>
-                            <h2>Things that interest me</h2>
+                            <h2>The things that interest me</h2>
                             <h3>Steven Fowler</h3>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
         <div id="sticky_container">
             <ul class="menu_list">  
                 <li>
-                    <h1>Data, science and engineering<br>Things that interest me</h1>
+                    <h1>Data, science and engineering<br>The things that interest me</h1>
                 </li>
                 <li><button onclick="open_article('artID_me')">Who am I?</button></li>
             </ul>
@@ -138,12 +138,12 @@
             <!--About me-->
             <div class="popup_container" id="artID_me">
                 <div class="close_menu">
-                    <h1></h1>
-                    <button class="close_button" onclick="close_article('artID_me')">back</button>
+                    <h1>Who am I...</h1>
+                    <button class="close_button" onclick="close_article('artID_me')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/sunset.jpg">
-                    <h1>Who am I...</h1>
+                    <!-- <h1>Who am I...</h1> -->
                     <h2><i>Inquisitive, Collaborative, Innovative</i></h2>
                     <hr>
                     <p>An <mark>engineer</mark> and <mark>scientist</mark> focused on leading the development of solutions to deliver innovative and differentiating award-winning products. 
@@ -190,11 +190,10 @@
             <!--Website notes-->
             <div class="popup_container" id="artID_Website">
                 <div class="close_menu">
-                    <h1></h1>
-                    <button class="close_button" onclick="close_article('artID_Website')">back</button>
+                    <h1>Information about this website</h1>
+                    <button class="close_button" onclick="close_article('artID_Website')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="assets/images/boat_to_vic.jpeg">
                     <h1>Diablo the wonder dog</h1>
                     <img src="assets/images/diablo.jpg">
                     <h1>Disclaimers and credit</h1>
@@ -203,18 +202,25 @@
                         <li>All images were taken or made by me (or will be when I finish the site)</li>
                         <li>Animation on the landing page was inspired from html5up.net (<a href="https://html5up.net/dimension" target="_blank" rel="noopener noreferrer">link</a>)</li>
                     </ul>
+                    <img class="img_header" src="assets/images/boat_to_vic.jpeg">
                 </div>
             </div>
             <!--Article 01-->
             <div class="popup_container" id="artID_01">
                 <div class="close_menu">
                     <h1>Thermal modelling of boiling eggs</h1>
-                    <button class="close_button" onclick="close_article('artID_01')">back</button>
+                    <button class="close_button" onclick="close_article('artID_01')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/egg_image_header.png">
-                    <p class="p_button" ><a class="a_button" href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">report</a>
-                    <a class="a_button" href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p class="p_button" >
+                        <a class="a_button" href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                     <!-- <h1>Thermal modelling of boiling eggs</h1> -->
                     <p>This investigation uses thermal modelling to simulate the Ajitsuke Tamago cooking procedure as the egg changes its stages as it solidifies.</p>
                     <h2>Overview</h2>
@@ -228,21 +234,31 @@
                     <figcaption>Heat map and cross-section of egg at 63°C inflection point.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Read the full <a href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">report</a>. 
-                        Or review the code in full at <a href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">report</a>
-                    <a class="a_button" href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p>Read the full <a href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="Ajitsuke Tamago.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/diffusion_models" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <!--Article 02-->
             <div class="popup_container" id="artID_02">
                 <div class="close_menu">
                     <h1>Lego database</h1>
-                    <button class="close_button" onclick="close_article('artID_02')">back</button>
+                    <button class="close_button" onclick="close_article('artID_02')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/art_itm_02.png">
-                    <p class="p_button"><a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p class="p_button">
+                        <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">
+                            <button>Github</button>
+                        </a>
+                    </p>
                     <!-- <h1>Lego database</h1> -->
                     <p>Lego is awesome! So when I discovered there was a data available to construct a database based on all the sets made since 1949, I could not resist having a look. 
                         So, the first step to exploring this data was to build a local database that I could query.</p>
@@ -265,20 +281,30 @@
                     <figcaption>Schema (v3) of Lego database from rebrickable.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Review the notes and access the scripts used on <a href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p>Review the notes and access the scripts used on <a href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">
+                            <button>Github</button>
+                        </a>
+                    </p>                
                 </div>
             </div>
             <!--Article 03-->
             <div class="popup_container" id="artID_03">
                 <div class="close_menu">
                     <h1>Lego bricks since 1949</h1>
-                    <button class="close_button" onclick="close_article('artID_03')">back</button>
+                    <button class="close_button" onclick="close_article('artID_03')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/bricks_SW_02.png">
-                    <p class="p_button"><a class="a_button" href="Brick_colours.html" target="_blank" rel="noopener noreferrer">report</a>
-                    <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p class="p_button">
+                        <a class="a_button" href="Brick_colours.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                     <!-- <h1>Lego bricks since 1949</h1> -->
                     <p>This investigation looks into a Lego brick database to explore how lego bricks have changes since it conception in 1949.</p>
                     <h2>Overview</h2>
@@ -291,15 +317,21 @@
                     <figcaption>All the Lego brick colours. Saturation vs Hue, fill is brick colour.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Read the full <a href="Brick_colours.html" target="_blank" rel="noopener noreferrer">report</a>. Or review the code in full at <a href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="Brick_colours.html" target="_blank" rel="noopener noreferrer">report</a>
-                    <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p>Read the full <a href="Brick_colours.html" target="_blank" rel="noopener noreferrer">Report</a>. Or review the code in full at <a href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="Brick_colours.html" target="_blank" rel="noopener noreferrer">
+                            <button>Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Lego_data" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <!--Article 04-->
             <div class="popup_container" id="artID_04">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_04')">back</button>
+                    <button class="close_button" onclick="close_article('artID_04')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="">
@@ -313,16 +345,16 @@
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">report</a>. 
-                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">github</a>.</p>
-                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">github</a></p>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
             </div>
             <!--Article 05-->
             <div class="popup_container" id="artID_05">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_05')">back</button>
+                    <button class="close_button" onclick="close_article('artID_05')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Health data analysis</h1>
@@ -333,7 +365,7 @@
             <!--Article 06-->
             <div class="popup_container" id="artID_06">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_06')">back</button>
+                    <button class="close_button" onclick="close_article('artID_06')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Geographical analysis<h1>
@@ -343,7 +375,7 @@
             <!--Article 07-->
             <div class="popup_container" id="artID_07">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_07')">back</button>
+                    <button class="close_button" onclick="close_article('artID_07')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Statistical inference</h1>
@@ -353,7 +385,7 @@
             <!--Article 08-->
             <div class="popup_container" id="artID_08">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_08')">back</button>
+                    <button class="close_button" onclick="close_article('artID_08')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Chaos - pendulums</h1>
@@ -363,7 +395,7 @@
             <!--Article 09-->
             <div class="popup_container" id="artID_09">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_09')">back</button>
+                    <button class="close_button" onclick="close_article('artID_09')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Controlling chaos</h1>
@@ -373,7 +405,7 @@
             <!--Article 10-->
             <div class="popup_container" id="artID_10">
                 <div class="close_menu">
-                    <button class="close_button" onclick="close_article('artID_10')">back</button>
+                    <button class="close_button" onclick="close_article('artID_10')">Back</button>
                 </div>
                 <div class="popup_article">
                     <h1>Machine learning</h1>

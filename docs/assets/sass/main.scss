@@ -1,9 +1,20 @@
 
 /* Variable declaration */
-$primary_color_light: #bfc2c2;
-$primary_color_dark: #3D4040; // rgb(34,34,34);
-$highlight_colour_orange: #d9230f;
-// $primary_font: 'Courier New', monospace;
+$primary_color_light: #fffffe;      // Background, Main
+$primary_color_dark: #272343;       // Headline, Button text, Stroke
+$primary_color_text: #2d334a;       // Paragraph
+$primary_color_highlight: #ffd803;  // Button, Highlight
+$secondary_color: #e3f6f5;          // Secondary
+$tertiary_color: #bae8e8;           // Tertiary
+$primary_button_hover: #FFE86B;
+$primary_button_active: #F0CB00;
+$primary_text_link: #2B8282;
+$secondary_button_color: #FFF2A8;
+$secondary_button_hover: #FFF9DB;
+$secondary_button_active: #FFE86B;
+$secondary_stroke_color: #FFD803;
+$secondary_stroke_hover: #FFE86B;
+$secondary_stroke_active: #F0CB00;
 $primary_font: 'Satoshi', Arial, sans-serif;
 
 /* breakpoints */
@@ -29,14 +40,14 @@ html, body, div, p, ul, li, h1, h2, h3 {
     padding: 0;
     font-size: 100%;
     font-family: $primary_font;
-    color: $primary_color_light;
 }
 html, body, div, p, ul, li {
     line-height: 1.5;
+    color: $primary_color_text;
 }
-
 h1, h2, h3 {
     line-height: 1.25;
+    color: $primary_color_dark;
 }
 
 
@@ -73,8 +84,8 @@ html, body {
     left: 0;
     width: 100lvw;
     height: 100lvh;
-    background-color: black;
-    color: $primary_color_light;
+    background-color: $secondary_color;
+    color: $primary_color_text;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,35 +110,35 @@ html, body {
     overflow-y: none; /* If content overflow -> vertical scrolling */
     justify-content: center;
     text-align: center;
-    background-color: lightslategray;
+    // background-color: $primary_color_light;
 }
 #landing_item {
     flex-grow: 1;
-    background-color: black;
+    background-color: $primary_color_dark;
     max-height: 100%;
     overflow: hidden;
     // position: relative;
-    svg {
-        --path_stroke_size: 1; /* .26458437 */
-        --path_stroke: #bfc2c2;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    // svg {
+    //     --path_stroke_size: 1; /* .26458437 */
+    //     --path_stroke: $primary_color_dark;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
 
-        @include for-tablet-portrait-up {
+    //     @include for-tablet-portrait-up {
 
-        }
-        @include for-tablet-landscape-up {
+    //     }
+    //     @include for-tablet-landscape-up {
 
-        }
-        @include for-desktop-up {
+    //     }
+    //     @include for-desktop-up {
 
-        }
-        @include for-big-desktop-up {
+    //     }
+    //     @include for-big-desktop-up {
             
-        }
-    }
+    //     }
+    // }
 }
 #landing_background {
     width: 100%;
@@ -192,8 +203,8 @@ html, body {
 }
 #landing_text
 {
-    color: $primary_color_light;
-    text-shadow: 2px 2px 4px #000000;
+    // color: $primary_color_dark;
+    // text-shadow: 2px 2px 4px #000000;
     border-top: $primary_color_light solid 2px;
     border-bottom: $primary_color_light solid 2px;
     padding: 2rem;
@@ -204,13 +215,16 @@ html, body {
     h1 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
+        color: $primary_color_light;
     }
     h2 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
+        color: $primary_color_light;
     }
     h3 {
         font-size: 1rem;
+        color: $primary_color_light;
     }
 }
 @keyframes fade_in {
@@ -252,7 +266,7 @@ html, body {
     top: 0;
     width: 100%;
     z-index: 5000; /* > main page < overlay */
-    background-color: $primary_color_dark;
+    background-color: $secondary_color;
     
     .menu_list {
         display: flex;
@@ -267,24 +281,66 @@ html, body {
         li {
             margin: 1rem;
         }
-        button {
-            width: auto;
-            white-space: nowrap;
-            font-size: 1rem;
-            color: $highlight_colour_orange;
-            background-color: $primary_color_light;
-            padding: 10%;
-            border: none;
-            border-radius: 5%;
-            box-shadow: 0px 0px 2px 2px $primary_color_light;
-            &:hover {
-                color: $primary_color_light;
-                background-color: $highlight_colour_orange;
-                box-shadow: 0px 0px 2px 2px $highlight_colour_orange;
-            }
-        }
+        // button {
+        //     // width: auto;
+        //     // white-space: nowrap;
+        //     // font-size: 1rem;
+        //     // padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        //     // gap: 0;
+        //     // border-radius: 999px;
+
+        //     // color: $primary_color_dark;
+        //     // background-color: $primary_color_highlight;
+            
+        //     // border: none;
+            
+        //     // // box-shadow: 0px 0px 2px 2px $primary_color_light;
+        //     // &:hover {
+        //     //     color: $primary_color_dark;
+        //     //     background-color: $primary_color_highlight;
+        //     //     // box-shadow: 0px 0px 1px 1px $primary_color_highlight;
+        //     // }
+        // }
     }
 }
+button {    // Defines all buttons on website
+    width: auto;
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    gap: 0;
+    border-radius: 999px;
+
+    color: $primary_color_dark;
+    background-color: $primary_color_highlight;
+    
+    border: none;
+    
+    // box-shadow: 0px 0px 2px 2px $primary_color_light;
+    &:hover {
+        // color: $primary_color_dark;
+        background-color: $primary_button_hover;
+        // box-shadow: 0px 0px 1px 1px $primary_color_highlight;
+    }
+    &:active {
+        background-color: $primary_button_active;
+    }
+    
+}
+.secondary_button {
+        background-color: $secondary_button_color;
+        border-color: $secondary_stroke_color;
+        border-style: solid;
+        border-width: 2px;
+        &:hover {
+            background-color: $secondary_button_hover;
+            border-color: $secondary_stroke_hover;
+        }
+        &:active {
+            background-color: $secondary_button_active;
+            border-color: $secondary_stroke_active;
+        }
+    }
 
 /* Article selection area */
 #article_container {    
@@ -386,8 +442,8 @@ html, body {
             // top: 50%;
             // left: 50%;
             // transform: translate(-50%, -50%);
-            color: $primary_color_dark;
-            background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
+            // color: $primary_color_dark;
+            background-color: rgba($color: $primary_color_light, $alpha: 0.8);
             text-align: center;
             border-radius: 0.5rem;
             @include for-tablet-portrait-up {
@@ -427,7 +483,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+    background-color: rgba($color: $primary_color_dark, $alpha: 0.2); // Semi-transparent black overlay
     justify-content: center;
     align-items: center;
     display: none;
@@ -449,7 +505,7 @@ html, body {
         left: 50%;
         transform: translate(-50%, -50%);
         // background-color: $primary_color_light;
-        background-color: whitesmoke;
+        background-color: $primary_color_light;
         z-index: 7000; /* > overlay */
         @include for-tablet-portrait-up {
             width: 75%;
@@ -470,8 +526,11 @@ html, body {
             align-items: center;
             top: 0;
             width: 100%;
+            // padding: 5%;
+            // padding-left: 5%;
+            // padding-right: 5%;
             // z-index: 5000; /* > main page < overlay */
-            background-color: $primary_color_dark;
+            background-color: $secondary_color;
             // background-color: transparent;
             // text-align: right;
             h1 {
@@ -480,19 +539,20 @@ html, body {
                 padding: 0.5rem 0.5rem;
             }
             button {
-                margin: 1%;
                 margin-right: 5%;
-                padding: 1%;
-                border-radius: 5%;
-                border: none;
-                font-size: 1rem;
-                cursor: pointer;
-                background-color: $primary_color_light;
-                color: $highlight_colour_orange;
-                &:hover {
-                    background-color: $highlight_colour_orange;
-                    color: $primary_color_light;                        
-                }
+                // margin: 1%;
+                // margin-right: 5%;
+                // padding: 1%;
+                // border-radius: 5%;
+                // border: none;
+                // font-size: 1rem;
+                // cursor: pointer;
+                // background-color: $primary_color_light;
+                // color: $primary_color_highlight;
+                // &:hover {
+                //     background-color: $primary_color_highlight;
+                //     color: $primary_color_light;                        
+                // }
             }
         }
         .popup_article {
@@ -520,7 +580,7 @@ html, body {
                 }
             }
             p, figcaption, ul, li, h1, h2, h3, a {
-                color: $primary_color_dark;
+                // color: $primary_color_dark;
                 margin-bottom: 1.5em;
                 margin-top: 1.5em;
 
@@ -550,12 +610,13 @@ html, body {
             }
             a {
                 font-style: bold;
+                color: $primary_text_link;
                 &:hover {
-                color: $highlight_colour_orange;
+                color: $primary_color_highlight;
                 }
             }
             mark {
-                color: $highlight_colour_orange;
+                color: $primary_color_highlight;
                 background-color: transparent;
             }
             ul {
@@ -570,17 +631,8 @@ html, body {
                 text-align: center;
             }
             .a_button {
+                &:link, &:visited, &:hover, &:active {
                 text-decoration: none;
-                background-color: $primary_color_light;
-                color: $highlight_colour_orange;
-                border-style: solid;
-                border: $primary_color_dark;
-                border-width: thin;
-                padding: 1% 2% 1% 2%;
-                border-radius: 5%;
-                &:hover{
-                    background-color: $highlight_colour_orange;
-                    color: $primary_color_light;
                 }
             }
             .p_button {
@@ -607,7 +659,7 @@ html, body {
 }
 #footer {
     background-color: $primary_color_light;
-    color: $highlight_colour_orange;
+    color: $primary_color_dark;
     font-size: xx-small;
     text-align: center;
 }
