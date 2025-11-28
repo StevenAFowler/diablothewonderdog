@@ -7,6 +7,7 @@
         <link rel="icon" href="assets/images/gloop_favicon.ico">
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 		<script async src="assets/js/main.js"></script>
+        <script async src="assets/js/lineFollow.js"></script>
 	</head>
     <body>
         <!-- Loading screen -->
@@ -16,18 +17,30 @@
         <!-- Full page lander-->
         <div id="landing_container">
             <div id="landing_item">
-                <img id="landing_background" src="assets/images/boat_to_vic.jpeg">
+                <!-- <img id="landing_background" src="assets/images/boat_to_vic.jpeg"> -->
+                <svg id="landing_svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"></svg>
+                
                 <div id="landing_align">
-                    <div id="logo">
-                        <img id="landing_icon" src="assets/images/ICON_TRACE_grey.png" width="50px">
+                    <div id="landing_text">
+                        <svg id="landing_svg_text" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                            <g id="g16">
+                                <text xml:space="preserve" font-size="160px" line-height="160px" font-weight="500" x="14.786451" y="282.44006" id="text1">
+                                    <tspan id="tspan14" x="14.786451" y="282.44006">DATA,</tspan>
+                                    <tspan id="tspan15" x="14.786451" y="442.44006">SCIENCE,</tspan>
+                                    <tspan id="tspan16" x="14.786451" y="602.44006">ENGINEERING</tspan>
+                                </text>
+                                <text xml:space="preserve" font-size="70px" font-weight="200" x="19.032694" y="724.88367" class="svg_text_name">
+                                    <tspan id="tspan4" x="19.032694" y="724.88367">Steven Fowler</tspan>
+                                </text>
+                                <path d="M 21.138031,639.05582 H 587.23912" class="svg_text_name"/>
+                                <text xml:space="preserve" font-size="120px" line-height="120px" font-weight="200" x="599.74908" y="40.034119" id="svg_text_highlight" transform="rotate(11.434591)">
+                                    <tspan id="tspan5" x="599.74908" y="40.034119">Things that </tspan>
+                                    <tspan x="599.74908" y="160.03412" id="tspan6">interest me</tspan>
+                                </text>
+                            </g>
+                        </svg>
                     </div>
-                    <div id="landing_content">
-                        <div id="landing_text">
-                            <h1>Data, science, engineering</h1>
-                            <h2>The things that interest me</h2>
-                            <h3>Steven Fowler</h3>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

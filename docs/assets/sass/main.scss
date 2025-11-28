@@ -105,8 +105,8 @@ html, body {
 #landing_container {
     display: flex;
     flex-direction: column;
-    min-height: 30lvh;
-    height:70lvh; /* Take full viewpoint */
+    min-height: 70lvh;
+    height:80lvh; /* Take full viewpoint */
     overflow-y: none; /* If content overflow -> vertical scrolling */
     justify-content: center;
     text-align: center;
@@ -117,148 +117,90 @@ html, body {
     background-color: $primary_color_dark;
     max-height: 100%;
     overflow: hidden;
-    // position: relative;
-    // svg {
-    //     --path_stroke_size: 1; /* .26458437 */
-    //     --path_stroke: $primary_color_dark;
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
 
-    //     @include for-tablet-portrait-up {
-
-    //     }
-    //     @include for-tablet-landscape-up {
-
-    //     }
-    //     @include for-desktop-up {
-
-    //     }
-    //     @include for-big-desktop-up {
-            
-    //     }
-    // }
-}
-#landing_background {
+    #landing_svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
+    pointer-events: all; 
     opacity: 0.0;
-    animation: fade_in 3s ease-in-out 1s forwards;
-}
-#landing_icon {
-    width: 5rem;
-    height: auto;
-    position: relative;
-    top: 0;
-}
-#logo {
-    margin: 0;
-    padding: 0;
-    border: none;
+    animation: fade_in 2s ease-in-out 0s forwards;
+    }
+    
+    .background_lines {
+        stroke: $primary_color_light;
+    }
+    
+    @keyframes fade_in {
+        100% {
+            opacity: 0.4;
+        }
+    }
 }
 #landing_align {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    // transform: translate(-50%);
-    transform: translateX(-50%);
-    width: 80%;
-    min-width: 300px;
-}
-#landing_content {
-    position: relative;
-    margin-top: calc(5rem - 5px);
-    &:before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        transform: translateY(-100%);
-        height: 5rem;
-        width: 2px;
-        background-color: $primary_color_light;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 80lvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+    #landing_text {
+        width: 80%;
+        height: 60lvh;
+        max-height: 300px;
+        
+        #landing_svg_text {
+            max-width: 100%;
+            max-height: 100%;
+            height: 100%;
+            font-style:normal;
+            font-variant:normal;
+            font-weight:normal;
+            font-stretch:normal;
+            font-family: $primary_font;
+            font-variant-ligatures:normal;
+            font-variant-caps:normal;
+            font-variant-numeric:normal;
+            font-variant-east-asian:normal;
+            text-align:start;
+            writing-mode:lr-tb;
+            direction:ltr;
+            text-anchor:start;
+            fill: $primary_color_light;
+            stroke: $primary_color_light;
+            stroke-width:2;
+
+            .svg_text_name {
+                fill: $secondary_color;
+                stroke: $secondary_color;
+            }
+
+            #svg_text_highlight {
+                fill: $primary_color_highlight;
+                stroke: $primary_color_highlight;
+            }
+        }
+
+        &.animated{
+            animation: expand_title 1.5s ease-out 0s forwards;
+        }
     }
-}
-#landing_text.animated{
-    animation: expand_title 1.5s ease-out 0s forwards;
 }
 @keyframes expand_title {
     0% {
         max-height: 0;
-        padding: 0rem;
         opacity: 0;
     }
     30% {
         max-height: 500px;
-        padding: 2rem;
-        // opacity: 1;
     }
     100% {
-        // max-height: 500px;
-        // padding: 2rem;
         opacity: 1;
     }
 }
-#landing_text
-{
-    // color: $primary_color_dark;
-    // text-shadow: 2px 2px 4px #000000;
-    border-top: $primary_color_light solid 2px;
-    border-bottom: $primary_color_light solid 2px;
-    padding: 2rem;
-
-    max-height: 500px;
-    overflow: hidden;
-    
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: $primary_color_light;
-    }
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: $primary_color_light;
-    }
-    h3 {
-        font-size: 1rem;
-        color: $primary_color_light;
-    }
-}
-@keyframes fade_in {
-    100% {
-        opacity: 0.4;
-    }
-}
-// #svg_dog.animate {
-//     animation: draw_line 2s linear 1s forwards;
-// }
-// #svg_cir.animate {
-//     animation: draw_line 0.5s linear 3s forwards;
-// }
-// #svg_dow.animate {
-//     animation: draw_line 0.4s linear 3.5s forwards;
-// }
-// #svg_l11.animate, #svg_l12.animate, #svg_l21.animate, #svg_l22.animate {
-//     animation: draw_line 0.5s linear 3.9s forwards;
-// }
-// #svg_txt2.animate, #svg_txt3.animate, #svg_txt4.animate {
-//     opacity: 0;
-//     animation: fade_txt 1s ease-in-out 0s forwards
-// }
-// @keyframes draw_line {
-//     100% {
-//         stroke-dashoffset: 0;
-//     }
-// }
-// @keyframes fade_txt {
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
 
 /* Menu */
 #sticky_container {
