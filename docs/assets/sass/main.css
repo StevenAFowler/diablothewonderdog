@@ -138,22 +138,7 @@ html, body {
   fill: #ffd803;
   stroke: #ffd803;
 }
-#landing_align #landing_text.animated {
-  animation: expand_title 1.5s ease-out 0s forwards;
-}
 
-@keyframes expand_title {
-  0% {
-    max-height: 0;
-    opacity: 0;
-  }
-  30% {
-    max-height: 500px;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* Menu */
 #sticky_container {
   position: sticky;
@@ -366,7 +351,6 @@ button:active {
   border-radius: 2.5%;
   margin: auto;
   display: block;
-  /*transform: translate(5%, 0);*/
 }
 @media all and (min-width: 900px) {
   #blur_overlay .popup_container .popup_article img {

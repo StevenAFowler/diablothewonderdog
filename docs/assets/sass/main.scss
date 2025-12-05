@@ -93,13 +93,7 @@ html, body {
     z-index: 20000; /* Ensure it is above all other content */
     opacity: 1;
     pointer-events: none;
-    // transition: opacity 3s ease-in-out, display 3s allow-discrete;
 }
-
-// #loading_screen.fade-out {
-//     opacity: 0;
-//     display: none;
-// }
 
 /* Landing area */
 #landing_container {
@@ -110,7 +104,6 @@ html, body {
     overflow-y: none; /* If content overflow -> vertical scrolling */
     justify-content: center;
     text-align: center;
-    // background-color: $primary_color_light;
 }
 #landing_item {
     flex-grow: 1;
@@ -121,7 +114,6 @@ html, body {
     #landing_svg {
     width: 100%;
     height: 100%;
-    // object-fit: cover;
     pointer-events: all; 
     opacity: 0.0;
     animation: fade_in 2s ease-in-out 0s forwards;
@@ -130,7 +122,7 @@ html, body {
     .background_lines {
         stroke: $primary_color_light;
     }
-    
+
     @keyframes fade_in {
         100% {
             opacity: 0.4;
@@ -183,22 +175,6 @@ html, body {
                 stroke: $primary_color_highlight;
             }
         }
-
-        &.animated{
-            animation: expand_title 1.5s ease-out 0s forwards;
-        }
-    }
-}
-@keyframes expand_title {
-    0% {
-        max-height: 0;
-        opacity: 0;
-    }
-    30% {
-        max-height: 500px;
-    }
-    100% {
-        opacity: 1;
     }
 }
 
@@ -223,26 +199,6 @@ html, body {
         li {
             margin: 1rem;
         }
-        // button {
-        //     // width: auto;
-        //     // white-space: nowrap;
-        //     // font-size: 1rem;
-        //     // padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-        //     // gap: 0;
-        //     // border-radius: 999px;
-
-        //     // color: $primary_color_dark;
-        //     // background-color: $primary_color_highlight;
-            
-        //     // border: none;
-            
-        //     // // box-shadow: 0px 0px 2px 2px $primary_color_light;
-        //     // &:hover {
-        //     //     color: $primary_color_dark;
-        //     //     background-color: $primary_color_highlight;
-        //     //     // box-shadow: 0px 0px 1px 1px $primary_color_highlight;
-        //     // }
-        // }
     }
 }
 button {    // Defines all buttons on website
@@ -257,12 +213,9 @@ button {    // Defines all buttons on website
     background-color: $primary_color_highlight;
     
     border: none;
-    
-    // box-shadow: 0px 0px 2px 2px $primary_color_light;
+
     &:hover {
-        // color: $primary_color_dark;
         background-color: $primary_button_hover;
-        // box-shadow: 0px 0px 1px 1px $primary_color_highlight;
     }
     &:active {
         background-color: $primary_button_active;
@@ -290,9 +243,7 @@ button {    // Defines all buttons on website
     flex-direction: column; /* Allows articles to wrap to the next line */
     flex-wrap: nowrap;
     justify-content: center; /* Centers articles horizontally */
-    // align-items: normal;
     gap: 50px; /* Space between articles */
-    // padding: 10%;
     padding-top: 5%;
     padding: 5% 5%;
     background-color: $primary_color_light;
@@ -321,36 +272,27 @@ button {    // Defines all buttons on website
         position: relative;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         border-radius: 0.5rem;
-        // background-color: lightblue;
 
         @include for-tablet-portrait-up {
             flex: 1 1 400px;
             min-width: 300px;
             max-width: 40%;     // Only 2 cards presented
-            // background-color: lightgreen;
         }
         @include for-tablet-landscape-up {
-            // background-color: lightseagreen;
             max-width: 25%;
         }
         @include for-desktop-up {
-            // background-color: lightpink;
             &:hover {
                 p {
                     display: block;
                 }
-                div {
-                    // background-color: rgba($color: $primary_color_dark, $alpha: 0.8);
-                }
                 img {
-                    // width: 110%;
-                    // height: 110%;
+
                     filter: blur(1px);
                 }
             }
         }
         @include for-big-desktop-up {
-            // background-color: lightskyblue;
         }
         .container_image {
             width: 100%;
@@ -368,9 +310,7 @@ button {    // Defines all buttons on website
             @include for-tablet-landscape-up {
             }
             @include for-desktop-up {
-                // filter: blur(2px);
-                // transition: width 0.2s, height 0.2s, filter 0.2s;
-                // transition-timing-function: ease-out;
+
             }
             @include for-big-desktop-up {
             }
@@ -380,11 +320,6 @@ button {    // Defines all buttons on website
             padding: 0.5rem;
             position: absolute;
             bottom: 0;
-            // top: 0;
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-            // color: $primary_color_dark;
             background-color: rgba($color: $primary_color_light, $alpha: 0.8);
             text-align: center;
             border-radius: 0.5rem;
@@ -393,8 +328,7 @@ button {    // Defines all buttons on website
             @include for-tablet-landscape-up {
             }
             @include for-desktop-up {
-                // transition: background-color 0.5s ease-out;
-                // background-color: transparent;
+
             }
             @include for-big-desktop-up {
             }
@@ -468,13 +402,7 @@ button {    // Defines all buttons on website
             align-items: center;
             top: 0;
             width: 100%;
-            // padding: 5%;
-            // padding-left: 5%;
-            // padding-right: 5%;
-            // z-index: 5000; /* > main page < overlay */
             background-color: $secondary_color;
-            // background-color: transparent;
-            // text-align: right;
             h1 {
                 font-size: 1.5rem;
                 margin-left: 5%;
@@ -482,19 +410,6 @@ button {    // Defines all buttons on website
             }
             button {
                 margin-right: 5%;
-                // margin: 1%;
-                // margin-right: 5%;
-                // padding: 1%;
-                // border-radius: 5%;
-                // border: none;
-                // font-size: 1rem;
-                // cursor: pointer;
-                // background-color: $primary_color_light;
-                // color: $primary_color_highlight;
-                // &:hover {
-                //     background-color: $primary_color_highlight;
-                //     color: $primary_color_light;                        
-                // }
             }
         }
         .popup_article {
@@ -507,7 +422,6 @@ button {    // Defines all buttons on website
                 border-radius: 2.5%;
                 margin: auto;
                 display: block;
-                /*transform: translate(5%, 0);*/
                 @include for-tablet-portrait-up {
         
                 }
@@ -522,7 +436,6 @@ button {    // Defines all buttons on website
                 }
             }
             p, figcaption, ul, li, h1, h2, h3, a {
-                // color: $primary_color_dark;
                 margin-bottom: 1.5em;
                 margin-top: 1.5em;
 
