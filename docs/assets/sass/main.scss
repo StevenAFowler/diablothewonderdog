@@ -15,6 +15,7 @@ $secondary_button_active: #FFE86B;
 $secondary_stroke_color: #FFD803;
 $secondary_stroke_hover: #FFE86B;
 $secondary_stroke_active: #F0CB00;
+$tertiary_text_link: #297A7A;
 $primary_font: 'Satoshi', Arial, sans-serif;
 
 /* breakpoints */
@@ -185,6 +186,7 @@ html, body {
     width: 100%;
     z-index: 5000; /* > main page < overlay */
     background-color: $secondary_color;
+    margin-bottom: 2rem;
     
     .menu_list {
         display: flex;
@@ -238,120 +240,126 @@ button {    // Defines all buttons on website
     }
 
 /* Article selection area */
-#article_container {    
-    display: flex;
-    flex-direction: column; /* Allows articles to wrap to the next line */
-    flex-wrap: nowrap;
-    justify-content: center; /* Centers articles horizontally */
-    gap: 50px; /* Space between articles */
-    padding-top: 5%;
-    padding: 5% 5%;
-    background-color: $primary_color_light;
-
-    @include for-tablet-portrait-up {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    @include for-tablet-landscape-up {
-
-    }
-    @include for-desktop-up {
-
-    }
-    @include for-big-desktop-up {
-        
+#article_space{
+    text-align: center;
+    h1 {
+        font-size: 2rem;
     }
 
-    .article_item {
-        flex: 1 1 90%;  // Can grow, shrink with ideal 90% size
-        min-width: 300px;
-        max-width: 90%; // Mobile first :) - only 1 column
-        height: auto;
-        aspect-ratio: 4 / 3;
-        padding: 0px;
-        position: relative;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 0.5rem;
+    .article_container {    
+        display: flex;
+        flex-direction: column; /* Allows articles to wrap to the next line */
+        flex-wrap: nowrap;
+        justify-content: center; /* Centers articles horizontally */
+        gap: 50px; /* Space between articles */
+        padding-top: 5%;
+        padding: 5% 5%;
+        background-color: $primary_color_light;
 
         @include for-tablet-portrait-up {
-            flex: 1 1 400px;
-            min-width: 300px;
-            max-width: 40%;     // Only 2 cards presented
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         @include for-tablet-landscape-up {
-            max-width: 25%;
+
         }
         @include for-desktop-up {
-            &:hover {
-                p {
-                    display: block;
-                }
-                img {
 
-                    filter: blur(1px);
-                }
-            }
         }
         @include for-big-desktop-up {
+            
         }
-        .container_image {
-            width: 100%;
-            height: 100%;
-            bottom: 0;
-            position: absolute;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 0.5rem;
-            object-fit: cover;
-            @include for-tablet-portrait-up {
-            }
-            @include for-tablet-landscape-up {
-            }
-            @include for-desktop-up {
 
-            }
-            @include for-big-desktop-up {
-            }
-        }
-        .container_header { // Text in item / card
-            width: calc(100% - 2*0.5rem);     // 100% width - 2x 2.5% padding
-            padding: 0.5rem;
-            position: absolute;
-            bottom: 0;
-            background-color: rgba($color: $primary_color_light, $alpha: 0.8);
-            text-align: center;
+        .article_item {
+            flex: 1 1 90%;  // Can grow, shrink with ideal 90% size
+            min-width: 300px;
+            max-width: 90%; // Mobile first :) - only 1 column
+            height: auto;
+            aspect-ratio: 4 / 3;
+            padding: 0px;
+            position: relative;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             border-radius: 0.5rem;
-            @include for-tablet-portrait-up {
-            }
-            @include for-tablet-landscape-up {
-            }
-            @include for-desktop-up {
 
-            }
-            @include for-big-desktop-up {
-            }
-        }
-        h2 {
-            font-size: 1.0rem;
-        }
-        p {
-            font-size: 1rem;
-            display: block;
             @include for-tablet-portrait-up {
+                flex: 1 1 400px;
+                min-width: 300px;
+                max-width: 40%;     // Only 2 cards presented
             }
             @include for-tablet-landscape-up {
+                max-width: 25%;
             }
             @include for-desktop-up {
-                display: none;
+                &:hover {
+                    p {
+                        display: block;
+                    }
+                    img {
+
+                        filter: blur(1px);
+                    }
+                }
             }
             @include for-big-desktop-up {
             }
+            .container_image {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                position: absolute;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 0.5rem;
+                object-fit: cover;
+                @include for-tablet-portrait-up {
+                }
+                @include for-tablet-landscape-up {
+                }
+                @include for-desktop-up {
+
+                }
+                @include for-big-desktop-up {
+                }
+            }
+            .container_header { // Text in item / card
+                width: calc(100% - 2*0.5rem);     // 100% width - 2x 2.5% padding
+                padding: 0.5rem;
+                position: absolute;
+                bottom: 0;
+                background-color: rgba($color: $primary_color_light, $alpha: 0.8);
+                text-align: center;
+                border-radius: 0.0rem 0.0rem 0.5rem 0.5rem;
+                @include for-tablet-portrait-up {
+                }
+                @include for-tablet-landscape-up {
+                }
+                @include for-desktop-up {
+
+                }
+                @include for-big-desktop-up {
+                }
+            }
+            h2 {
+                font-size: 1.0rem;
+            }
+            p {
+                font-size: 1rem;
+                display: block;
+                @include for-tablet-portrait-up {
+                }
+                @include for-tablet-landscape-up {
+                }
+                @include for-desktop-up {
+                    display: none;
+                }
+                @include for-big-desktop-up {
+                }
+            }
         }
-    }
 }
-
+}
 /* Article popup */
 #blur_overlay {
     position: fixed;
@@ -376,7 +384,7 @@ button {    // Defines all buttons on website
         overflow-y: hidden; /* If content overflow -> vertical scrolling */
         scrollbar-width: thin;
         scrollbar-color: $primary_color_light;
-        border-radius: 3%;
+        border-radius: 2rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -419,7 +427,7 @@ button {    // Defines all buttons on website
             img {
                 width: 100%;
                 object-fit: cover;
-                border-radius: 2.5%;
+                border-radius: 1rem;
                 margin: auto;
                 display: block;
                 @include for-tablet-portrait-up {
@@ -471,7 +479,8 @@ button {    // Defines all buttons on website
                 }
             }
             mark {
-                color: $primary_color_highlight;
+                color: $tertiary_text_link; //$primary_color_highlight;
+                font-weight: bold;
                 background-color: transparent;
             }
             ul {
@@ -515,6 +524,6 @@ button {    // Defines all buttons on website
 #footer {
     background-color: $primary_color_light;
     color: $primary_color_dark;
-    font-size: xx-small;
+    font-size: x-small;
     text-align: center;
 }
