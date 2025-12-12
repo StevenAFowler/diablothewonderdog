@@ -48,101 +48,109 @@
         <div id="sticky_container">
             <ul class="menu_list">  
                 <li>
-                    <h1>Data, science and engineering<br>The things that interest me</h1>
+                    <h1>A data driven engineer and scientist focused on<br>helping you with your technical challenges</h1>
                 </li>
-                <li><button onclick="open_article('artID_me')">Who am I?</button></li>
+                <li><button onclick="open_article('artID_me')">About me</button></li>
             </ul>
         </div>
         <!-- Articles selection -->
-        <div id="article_container">
-            <div class="article_item" onclick="open_article('artID_01')">
-                <div class="container_image">
-                    <img src="assets/images/egg_diffusion_03.png">
+        <div id="article_space">
+            <!-- Article complete -->
+            <h1>Completed projects</h1>
+            <div id="article_complete" class="article_container">
+                <div class="article_item" onclick="open_article('artID_01')">
+                    <div class="container_image">
+                        <img src="assets/images/egg_diffusion_03.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Boiled eggs?</h2>
+                        <p class="header_hide">Thermal modeling to find the perfect boiled egg</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Boiled eggs?</h2>
-                    <p class="header_hide">Thermal modeling to find the perfect boiled egg</p>
+            <div class="article_item" onclick="open_article('artID_02')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_02.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Lego database</h2>
+                        <p class="header_hide">Building a Lego database based on Rebrickable...</p>
+                    </div>
                 </div>
-            </div>
-           <div class="article_item" onclick="open_article('artID_02')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_02.png">
-                </div>
-                <div class="container_header">
-                    <h2>Lego database</h2>
-                    <p class="header_hide">Building a Lego database based on Rebrickable...</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_03')">
-                <div class="container_image">
-                    <img src="assets/images/art_01_1_simp.png">
-                </div>
-                <div class="container_header">
-                    <h2>Lego brick investigation</h2>
-                    <p class="header_hide">Exploring Lego bricks since 1949...</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_04')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_04.jpg">
-                </div>
-                <div class="container_header">
-                    <h2>Drug diffusion in tumours</h2>
-                    <p>Image analysis and mass transport modeling</p>
+                <div class="article_item" onclick="open_article('artID_03')">
+                    <div class="container_image">
+                        <img src="assets/images/art_01_1_simp.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Lego brick investigation</h2>
+                        <p class="header_hide">Exploring Lego bricks since 1949...</p>
+                    </div>
                 </div>
             </div>
-            <div class="article_item" onclick="open_article('artID_05')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_05.webp">
+            <!-- Article WIP -->
+            <h1>Works in progress</h1>
+            <div id="article_wip" class="article_container">
+                <div class="article_item" onclick="open_article('artID_04')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_04.jpg">
+                    </div>
+                    <div class="container_header">
+                        <h2>Drug diffusion in tumours</h2>
+                        <p>Image analysis and mass transport modeling</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Health data analysis</h2>
-                    <p>UNESCO / WHO data mining</p>
+                <div class="article_item" onclick="open_article('artID_05')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_05.webp">
+                    </div>
+                    <div class="container_header">
+                        <h2>Health data analysis</h2>
+                        <p>UNESCO / WHO data mining</p>
+                    </div>
                 </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_06')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_06.png">
+                <div class="article_item" onclick="open_article('artID_06')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_06.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Geographical analysis</h2>
+                        <p>Demo of data on map</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Geographical analysis</h2>
-                    <p>Demo of data on map</p>
+                <div class="article_item" onclick="open_article('artID_07')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_07.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Statistics inference</h2>
+                        <p>classification of data</p>
+                    </div>
                 </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_07')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_07.png">
+                <div class="article_item" onclick="open_article('artID_08')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_08.webp">
+                    </div>
+                    <div class="container_header">
+                        <h2>Chaos - pendulums</h2>
+                        <p>Model of pendulums</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Statistics inference</h2>
-                    <p>classification of data</p>
+                <div class="article_item" onclick="open_article('artID_09')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_09.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Controlling chaos</h2>
+                        <p>Control system for double pendulum</p>
+                    </div>
                 </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_08')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_08.webp">
-                </div>
-                <div class="container_header">
-                    <h2>Chaos - pendulums</h2>
-                    <p>Model of pendulums</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_09')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_09.png">
-                </div>
-                <div class="container_header">
-                    <h2>Controlling chaos</h2>
-                    <p>Control system for double pendulum</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_10')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_10.png">
-                </div>
-                <div class="container_header">
-                    <h2>Machine learning</h2>
-                    <p>Control system for double pendulum</p>
+                <div class="article_item" onclick="open_article('artID_10')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_10.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Machine learning</h2>
+                        <p>Control system for double pendulum</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,12 +159,11 @@
             <!--About me-->
             <div class="popup_container" id="artID_me">
                 <div class="close_menu">
-                    <h1>Who am I...</h1>
+                    <h1>About me</h1>
                     <button class="close_button" onclick="close_article('artID_me')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/sunset.jpg">
-                    <!-- <h1>Who am I...</h1> -->
                     <h2><i>Inquisitive, Collaborative, Innovative</i></h2>
                     <hr>
                     <p>An <mark>engineer</mark> and <mark>scientist</mark> focused on leading the development of solutions to deliver innovative and differentiating award-winning products. 
