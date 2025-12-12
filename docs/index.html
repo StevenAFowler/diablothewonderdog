@@ -105,8 +105,8 @@
                     <img src="assets/images/art_itm_06.png">
                 </div>
                 <div class="container_header">
-                    <h2>Geographical analysis</h2>
-                    <p>Demo of data on map</p>
+                    <h2>GeoSpatial charting</h2>
+                    <p>Demonstrating access and plotting of the WHO's GHO database</p>
                 </div>
             </div>
             <div class="article_item" onclick="open_article('artID_07')">
@@ -207,15 +207,16 @@
                     <button class="close_button" onclick="close_article('artID_Website')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Diablo the wonder dog</h1>
-                    <img src="assets/images/diablo.jpg">
+                    <img class="img_header" src="assets/images/boat_to_vic.jpeg">
                     <h1>Disclaimers and credit</h1>
                     <ul>
                         <li>This website was coded by me</li>
                         <li>All images were taken or made by me (or will be when I finish the site)</li>
-                        <li>Animation on the landing page was inspired from html5up.net (<a href="https://html5up.net/dimension" target="_blank" rel="noopener noreferrer">link</a>)</li>
+                        <li>Design input from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
                     </ul>
-                    <img class="img_header" src="assets/images/boat_to_vic.jpeg">
+                    <h1>This is Diablo the wonder dog...</h1>
+                    <p>Just in case you were wondering</p>
+                    <img src="assets/images/diablo.jpg">
                 </div>
             </div>
             <!--Article 01-->
@@ -367,6 +368,7 @@
             <!--Article 05-->
             <div class="popup_container" id="artID_05">
                 <div class="close_menu">
+                    <h1></h1>
                     <button class="close_button" onclick="close_article('artID_05')">Back</button>
                 </div>
                 <div class="popup_article">
@@ -378,11 +380,48 @@
             <!--Article 06-->
             <div class="popup_container" id="artID_06">
                 <div class="close_menu">
+                    <h1>GeoSpatial charting of WHO data</h1>
                     <button class="close_button" onclick="close_article('artID_06')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Geographical analysis<h1>
-                    <p>Demo data on map - maybe incorporate with health analysis</p>
+                    <img class="img_header" src="assets/images/art_06_02.png">
+                    <p class="p_button">
+                        <a class="a_button" href="genericPlot.html" target="_blank" rel="noopener noreferrer">
+                            <button>Interactive chart</button>
+                        </a>
+                        <a class="a_button" href="Global_Health_Observatory.html" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Health-data" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
+                    <p>This is a exploration into using the World Health Organisation (WHO) OAPI to access their Global Health Observatory (GHO) database.</p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>The Global Health Observatory is the World Health Organisation's gateway to share data on global health. 
+                        It is structured into categories of indicators (3043 at time of writing) that describe health statistics. 
+                        They generally all have dimensions of time and country, some have additional dimensions for example 'Age Group', 'Sex' and 'Severity'.</p>
+                    <p>This exploration primarily uses <mark>python</mark> to explore the GHO databases with <mark>GeoPandas</mark> for generating geospatial charts.
+                    Example interactive charts were made using <mark>D3</mark> to demonstrate how the WHO data could be visualized.</p>
+                    <img src="assets/images/art_06_01.png">
+                    <figcaption>Example of geospatial plotting of GHO data.</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Use an <a href="genericPlot.html" target="_blank" rel="noopener noreferrer">interactive chart</a>
+                         , read a <a href="Global_Health_Observatory.html" target="_blank" rel="noopener noreferrer">Report</a>
+                        . Or review the code in full at <a href="https://github.com/StevenAFowler/Health-data" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button">
+                        <a class="a_button" href="genericPlot.html" target="_blank" rel="noopener noreferrer">
+                            <button>Interactive chart</button>
+                        </a>
+                        <a class="a_button" href="Global_Health_Observatory.html" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Report</button>
+                        </a>
+                        <a class="a_button" href="https://github.com/StevenAFowler/Health-data" target="_blank" rel="noopener noreferrer">
+                            <button class="secondary_button">Github</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <!--Article 07-->
