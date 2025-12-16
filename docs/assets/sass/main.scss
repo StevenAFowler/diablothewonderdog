@@ -423,6 +423,7 @@ button {    // Defines all buttons on website
         .popup_article {
             padding: 5%;
             overflow-y: auto;
+            overflow-x: hidden;
             max-height: 90%;
             img {
                 width: 100%;
@@ -443,7 +444,7 @@ button {    // Defines all buttons on website
                     width: 75%;
                 }
             }
-            p, figcaption, ul, li, h1, h2, h3, a {
+            p, figcaption, h1, h2, h3, a, div, img {
                 margin-bottom: 1.5em;
                 margin-top: 1.5em;
 
@@ -516,6 +517,50 @@ button {    // Defines all buttons on website
                 @include for-desktop-up {
                 }
                 @include for-big-desktop-up {
+                }
+            }
+            .code {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            code {
+                max-width: 70%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-width: 1px;
+                border-style: solid;
+                background-color: $secondary_color;
+            }
+            #award_images{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                // flex-wrap: wrap;
+                width: 100%;
+                div{
+                    max-height: 50px;
+                    margin-left: 2%;
+                    margin-right: 2%;
+
+                    @include for-tablet-portrait-up {
+                    
+                    }
+                    @include for-tablet-landscape-up {
+                        max-height: 100px;
+                    }
+                    @include for-desktop-up {
+                        max-height: 200px;
+                    }
+                    @include for-big-desktop-up {
+                    }
+                }
+                img {
+                    // height: 150px;
+                    object-fit: contain;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
         }
