@@ -349,6 +349,7 @@ button:active {
 #blur_overlay .popup_container .popup_article {
   padding: 5%;
   overflow-y: auto;
+  overflow-x: hidden;
   max-height: 90%;
 }
 #blur_overlay .popup_container .popup_article img {
@@ -374,17 +375,17 @@ button:active {
     width: 75%;
   }
 }
-#blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article ul, #blur_overlay .popup_container .popup_article li, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a {
+#blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a, #blur_overlay .popup_container .popup_article div, #blur_overlay .popup_container .popup_article img {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
 @media all and (min-width: 600px) {
-  #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article ul, #blur_overlay .popup_container .popup_article li, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a {
+  #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a, #blur_overlay .popup_container .popup_article div, #blur_overlay .popup_container .popup_article img {
     margin-top: 3.5%;
   }
 }
 @media all and (min-width: 900px) {
-  #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article ul, #blur_overlay .popup_container .popup_article li, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a {
+  #blur_overlay .popup_container .popup_article p, #blur_overlay .popup_container .popup_article figcaption, #blur_overlay .popup_container .popup_article h1, #blur_overlay .popup_container .popup_article h2, #blur_overlay .popup_container .popup_article h3, #blur_overlay .popup_container .popup_article a, #blur_overlay .popup_container .popup_article div, #blur_overlay .popup_container .popup_article img {
     margin-top: 2.5%;
   }
 }
@@ -445,6 +446,48 @@ button:active {
     height: 200px;
   }
 }
+#blur_overlay .popup_container .popup_article .code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#blur_overlay .popup_container .popup_article code {
+  max-width: 70%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #e3f6f5;
+}
+#blur_overlay .popup_container .popup_article #award_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#blur_overlay .popup_container .popup_article #award_images div {
+  max-height: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+@media all and (min-width: 900px) {
+  #blur_overlay .popup_container .popup_article #award_images div {
+    max-height: 100px;
+  }
+}
+@media all and (min-width: 1200px) {
+  #blur_overlay .popup_container .popup_article #award_images div {
+    max-height: 200px;
+  }
+}
+#blur_overlay .popup_container .popup_article #award_images img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 #footer {
   background-color: #fffffe;
   color: #272343;
