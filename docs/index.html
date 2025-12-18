@@ -48,101 +48,111 @@
         <div id="sticky_container">
             <ul class="menu_list">  
                 <li>
-                    <h1>Data, science and engineering<br>The things that interest me</h1>
+                    <h1>A data driven engineer and scientist focused on<br>helping you with your technical challenges</h1>
+                    <h1>A data driven engineer and scientist focused on<br>helping you with your technical challenges</h1>
                 </li>
-                <li><button onclick="open_article('artID_me')">Who am I?</button></li>
+                <li><button onclick="open_article('artID_me')">About me</button></li>
+                <li><button onclick="open_article('artID_me')">About me</button></li>
             </ul>
         </div>
         <!-- Articles selection -->
-        <div id="article_container">
-            <div class="article_item" onclick="open_article('artID_01')">
-                <div class="container_image">
-                    <img src="assets/images/egg_diffusion_03.png">
+        <div id="article_space">
+            <!-- Article complete -->
+            <h1>Completed projects</h1>
+            <div id="article_complete" class="article_container">
+                <div class="article_item" onclick="open_article('artID_01')">
+                    <div class="container_image">
+                        <img src="assets/images/egg_diffusion_03.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Ajitsuke Tamago</h2>
+                        <p class="header_hide">Thermal modeling to find the perfect Ramen egg</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Ajitsuke Tamago</h2>
-                    <p class="header_hide">Thermal modeling to find the perfect Ramen egg</p>
+                <div class="article_item" onclick="open_article('artID_02')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_02.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Lego database</h2>
+                        <p class="header_hide">Building a Lego database based on Rebrickable...</p>
+                    </div>
                 </div>
-            </div>
-           <div class="article_item" onclick="open_article('artID_02')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_02.png">
+                <div class="article_item" onclick="open_article('artID_03')">
+                    <div class="container_image">
+                        <img src="assets/images/art_01_1_simp.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Lego brick investigation</h2>
+                        <p class="header_hide">Exploring Lego bricks since 1949...</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Lego database</h2>
-                    <p class="header_hide">Building a Lego database based on Rebrickable...</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_03')">
-                <div class="container_image">
-                    <img src="assets/images/art_01_1_simp.png">
-                </div>
-                <div class="container_header">
-                    <h2>Lego brick investigation</h2>
-                    <p class="header_hide">Exploring Lego bricks since 1949...</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_04')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_04.jpg">
-                </div>
-                <div class="container_header">
-                    <h2>Drug diffusion in tumours</h2>
-                    <p>Image analysis and mass transport modeling</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_05')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_05.webp">
-                </div>
-                <div class="container_header">
-                    <h2>Health data analysis</h2>
-                    <p>UNESCO / WHO data mining</p>
+                <div class="article_item" onclick="open_article('artID_06')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_06.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>GeoSpatial charting</h2>
+                        <p>Demonstrating access and plotting of the WHO's GHO database</p>
+                    </div>
                 </div>
             </div>
-            <div class="article_item" onclick="open_article('artID_06')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_06.png">
+            <!-- Article WIP -->
+            <h1>Works in progress</h1>
+            <div id="article_wip" class="article_container">
+                <div class="article_item" onclick="open_article('artID_04')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_04.jpg">
+                    </div>
+                    <div class="container_header">
+                        <h2>Drug diffusion in tumours</h2>
+                        <p>Image analysis and mass transport modeling</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>GeoSpatial charting</h2>
-                    <p>Demonstrating access and plotting of the WHO's GHO database</p>
+                <div class="article_item" onclick="open_article('artID_05')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_05.webp">
+                    </div>
+                    <div class="container_header">
+                        <h2>Health data analysis</h2>
+                        <p>UNESCO / WHO data mining</p>
+                    </div>
                 </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_07')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_07.png">
+                <div class="article_item" onclick="open_article('artID_07')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_07.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Statistics inference</h2>
+                        <p>classification of data</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Statistics inference</h2>
-                    <p>classification of data</p>
+                <div class="article_item" onclick="open_article('artID_08')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_08.webp">
+                    </div>
+                    <div class="container_header">
+                        <h2>Chaos - pendulums</h2>
+                        <p>Model of pendulums</p>
+                    </div>
                 </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_08')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_08.webp">
+                <div class="article_item" onclick="open_article('artID_09')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_09.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Controlling chaos</h2>
+                        <p>Control system for double pendulum</p>
+                    </div>
                 </div>
-                <div class="container_header">
-                    <h2>Chaos - pendulums</h2>
-                    <p>Model of pendulums</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_09')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_09.png">
-                </div>
-                <div class="container_header">
-                    <h2>Controlling chaos</h2>
-                    <p>Control system for double pendulum</p>
-                </div>
-            </div>
-            <div class="article_item" onclick="open_article('artID_10')">
-                <div class="container_image">
-                    <img src="assets/images/art_itm_10.png">
-                </div>
-                <div class="container_header">
-                    <h2>Machine learning</h2>
-                    <p>Control system for double pendulum</p>
+                <div class="article_item" onclick="open_article('artID_10')">
+                    <div class="container_image">
+                        <img src="assets/images/art_itm_10.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>Machine learning</h2>
+                        <p>Control system for double pendulum</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,52 +161,107 @@
             <!--About me-->
             <div class="popup_container" id="artID_me">
                 <div class="close_menu">
-                    <h1>Who am I...</h1>
+                    <h1>About me</h1>
+                    <h1>About me</h1>
                     <button class="close_button" onclick="close_article('artID_me')">Back</button>
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/sunset.jpg">
-                    <!-- <h1>Who am I...</h1> -->
-                    <h2><i>Inquisitive, Collaborative, Innovative</i></h2>
+                    <h2>Synopsis - <i>Inquisitive, Collaborative, Innovative</i></h2>
                     <hr>
                     <p>An <mark>engineer</mark> and <mark>scientist</mark> focused on leading the development of solutions to deliver innovative and differentiating award-winning products. 
                         Striving to solve technical challenges by applying multidisciplinary knowledge to facilitate, lead teams and mentor individuals in their areas of expertise. 
                         Passionate about communication, distilling complex ideas into simple messages. Data driven, basing decisions and strategies on a foundation of sound information.</p>
-                    <h2>My story</h2>
+                    <div id="award_images">
+                        <div><img src="assets/images/iF Award.png"></div>
+                        <div><img src="assets/images/RSoM Award.png"> </div>
+                        <div><img src="assets/images/Good DesignAward.png"></div>
+                        <div><img src="assets/images/ghp Award.png"></div>
+                        <div><img src="assets/images/UX DesignAward.png"></div>
+                    </div>
+
+                    <h2>Some of the fun things I've done during my career</h2>
                     <hr>
-                    <h3>Data and programming</h3>
+                    <h3>Data, modelling and understanding the problem</h3>
                     <p>
-                        The foundation of my interests in data science and programming can be traced back to my studies in engineering where I used <mark>Pascal</mark> to control robots, <mark>ABAQUS</mark> for FEA and gained a deeper understanding into the maths of modelling and simulation. 
-                        During my PhD, I continued to write programs to support my lab work. 
-                        For example I created an image analysis software to calculate contact angles on chemically modified surfaces. 
-                        This was my first insight into <mark>Object Oriented Programming</mark> using the likes of <mark>Java</mark> and <mark>C++</mark>.
+                        As an engineer and scientist the acquisition, interrogation and communication of data has been an essential part of my successful career. 
+                        I have primarily worked in and consulted for companies in the pharmaceutical and medical device sectors solving technical challenges.
                     </p>
                     <p>
-                        While working in industry managing a team of engineers and scientists developing pathology instruments, we needed to process large quantities of time series data being generated in the lab for algorithm development. 
-                        As part of this process I shifted the companies' prolific use of <mark>VBA</mark> (Excel) to <mark>MatLAB</mark> by first demonstrating proof of principle in <mark>Octave</mark>. 
-                        The next development milestone was when we needed to conduct a formal verification of this pathology instrument. 
-                        This required deepening up on my statistics and updating my knowledge to meet compliance to CLSI (<a href="https://clsi.org/" target="_blank" rel="noopener noreferrer">link</a>) standards for FDA submission, while also promoting the use of <mark>R</mark> for all statistical analysis. 
+                        <i>Examples of my work include:</i>
+                        <br>
+                        Leading multiple product <mark>verification</mark> studies and being responsible for the application of <mark>statistical techniques</mark> to meet industrial standards.
+                        Within the field of IVD’s, I have guided studies meeting compliance to the <a src="https://clsi.org/" target="_blank" rel="noopener noreferrer">CLSI</a> standards resulting in successful FDA submissions.
+                        I have also supported clients in the successful verification of devices like in-halers and otoscopes. 
+                    </p>
+                    <div class="code">
+                        <code>Tools used: R, MatLAB, Octave, VBA (Excel)</code>
+                    </div>
+                    
+                    <p>
+                        Integrating <mark>experimental data</mark> and <mark>math models</mark> to predict future results and optimise performance has been an essential part of understanding the mechanics of devices during their development.
+                        For example: 
+                        <ul>
+                            <li>Integrating <mark>numerical methods</mark> to estimate fluidic mechanical systems and exploring scenarios with <mark>Monte Carlo</mark> simulations to investigate pharmaceutical equipment.
+                                This was used to refine the requirements of a system while showing the bottle-necks of the manufacturing process so work packages could be focused on addressing critical areas.</li>
+                            <li>Providing guidance on <mark>statistical evaluation</mark> methods and <mark>DoE</mark>. 
+                                This supporting colleague's evaluated their scientific hypotheses developing processes for manufacture using standard practices and sound techniques.</li>
+                        </ul>
+                    </p>
+                    <div class="code">
+                        <code>Tools used: Python, R, Stan</code>
+                    </div>
+                    <p>
+                        Developing and <mark>validating physical models</mark> and rigs has always been an active part of my product development. 
+                        For example I've simulated the chemical degradation and mass transport in a drug product's primary packaging to support and guide design decisions enhancing shelflife. 
+                        Investigations highlighted the primary parameters that needed to be controlled as part of the design and influenced plausible concept solutions.
                     </p>
                     <p>
-                        Based on these foundations and experiences, I have continued to develop and apply my analytical and modelling skills in <mark>Python</mark> while developing products for the pharmaceutical and medical device industries. 
-                        Further example applications of data science and analytics include: 
+                        Other models created as part of design concept, feasibility and optimisation include:
+                        <ul>
+                            <li>Modelling <mark>electromagnetic</mark> fields to optimise magnet shield design for IVD product, resulted in geometry that minimised magnetic interference.</li>
+                            <li>Simulation of <mark>optical devices</mark> for root cause analysis of production issues with otoscope light guide. Resulting in the successful identification of the design change that caused the issue so it could be amended.</li>
+                            <li><mark>FEA</mark> stress-strain analysis on concept devices used to optimise designs and influence material selection.</li>
+                        </ul>
+                    </p>
+                    <div class="code">
+                    <code>Tools used: R, Python, Solidworks FEA, Zemax, FEMM</code>
+                    </div>
+
+                    <hr>
+                    <h3>Developing devices from concept to market</h3>
+                    <p>
+                        I’ve led and managed multiple projects through all phases of development <mark>from concept through to launch</mark> resulting in successful products. 
+                        Many of these products have been for the pharmaceutical and medical device industries with a strong focus on injection moulding and sheet metal manufacturing with integrated electronics and software. 
+                        Example product areas include: IVDs, drug delivery, optical instruments and bio-processing equipment.
+                    </p>
+                    <p>
+                        While developing various products I've successfully created test systems and rigs to verify and investigate a product’s performance. 
+                        These test systems focused on generating quantitative data for example:
                     </p>
                     <ul>
-                        <li>Simulating the chemical degradation and mass transport in primary packaging to support design decisions to enhance drug product shelflife.</li>
-                        <li>Integrating fluid modelling and Monte Carlo sampling to better understand and optimise the manufacture of pharmaceutical equipment.</li>
-                        <li>Application of statistical techniques that comply with industrial standards to formally verify the performance of products.</li>
-                        <li>Data wrangling and analysis to support investigations into colleagues' scientific hypotheses.</li>
-                        <li>Advocate, support and mentor scientists and engineers in experimental design, statistical practices and data analysis.</li>
+                        <li>Creating a performance evaluation rig for disposable IVD cartridges which included fluidic control generating real-time force and distance data with image analysis of fluidic movement. 
+                            I successfully wrote the rig control and data acquisition software in Python. 
+                            The rig identified key performance characteristics and batch variations that needed further control in the production process.</li>
+                        <li>Wrote an image analysis program to fit young-laplace curves to droplets in order to measure contact angles on chemically modified surfaces. 
+                            This provided a quantitative analysis of surface changes that could be correlated to device performance.</li>
                     </ul>
+                    <div class="code">
+                    <code>Tools used: Python, Solidworks FEA, OnShape, Creo, Java, C++</code>
+                    </div>
+
                     <hr>
-                    <h3>As an engineer and scientist</h3>
+                    <h3>Line-management, project management, leadership and mentoring</h3>
                     <p>
-                        As an engineer and scientist, I’ve led and managed multiple projects with experience of developing products from concept through to market. 
-                        Many of these products have been for the pharmaceutical and medical device industries with a strong focus on injection moulding and sheet metal manufacturing with integrated electronics and software. 
-                        Example product areas include: IVDs, drug delivery, optical instruments and bio-processing equipment.  
-                        I’m also an experienced project manager having led, implemented and worked within various flavours of Agile and phase-gate development processes.
+                        I have line-managed and been responsible for an engineering department (health & safety, budgeting, forecasting, recruitment) while also leading the technical development. 
+                        I’ve successfully moulded engineers and scientists into high performing teams with a focus on trust, independence, accountability and supporting each other.
+                        I’m also experienced in project management having led, implemented and worked within various implementations of the agile principles and phase-gate development processes while taking products from concept through to market.
                     </p>
-                    <p>Qualified as an engineer (1st class) with a PhD sensor technology.</p>
+                    <div class="code">
+                        <code>Tools used: Agile Principles, Phase-gate (Prince 2), daily management (leading stand-up’s, kanban, jira, GitHUB, Miro)</code>
+                    </div>
+
+                    <p>Qualified as an engineer (1st class, University of Glasgow, UK) with a PhD in sensor technology (Cranfield University, UK).</p>
                     <img class="img_header" src="assets/images/clover_point.jpg">
                 </div>
             </div>
@@ -208,14 +273,14 @@
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/boat_to_vic.jpeg">
-                    <h1>Disclaimers and credit</h1>
+                    <h2>Disclaimers and credit</h2>
                     <ul>
-                        <li>This website was coded by me</li>
+                        <li>This website was coded by me (no AI was harmed in the creation of this site)</li>
                         <li>All images were taken or made by me (or will be when I finish the site)</li>
-                        <li>Design input from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
+                        <li>Design ideas, input and direction from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
                     </ul>
-                    <h1>This is Diablo the wonder dog...</h1>
-                    <p>Just in case you were wondering</p>
+                    <hr>
+                    <h2>This is Diablo the wonder dog...just in case you were wondering</h2>
                     <img src="assets/images/diablo.jpg">
                 </div>
             </div>
@@ -345,11 +410,42 @@
             <!--Article 04-->
             <div class="popup_container" id="artID_04">
                 <div class="close_menu">
+                    <h1>Drug diffusion in tumours</h1>
                     <button class="close_button" onclick="close_article('artID_04')">Back</button>
                 </div>
                 <div class="popup_article">
+                    <img class="img_header" src="assets/images/art_itm_04.jpg">
+                    
+                    <p>
+                        Highly toxic drugs are often used to combat tumours, however the high potency can be detrimental to healthy tissue.
+                        Understanding how the drug compounds diffuse through the tumour can help to reduce the chances of damaging healthy tissue.
+                    </p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>This investigation looks at the image analysis of tumors to identify their constituent parts. 
+                        Then the transport of drug product can be simulated assuming a known point of injection.</p>
+                    <!-- <p>Another paragraph</p>
+                    <img src="">
+                    <figcaption>Caption related to image above</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
+                </div>
+            </div>
+            <!--Article 05-->
+            <div class="popup_container" id="artID_05">
+                <div class="close_menu">
+                    <h1>Health data analysis</h1>
+                    <button class="close_button" onclick="close_article('artID_05')">Back</button>
+                </div>
+                <div class="popup_article">
                     <img class="img_header" src="">
-                    <h1>Thermal modelling of boiling eggs</h1>
+                    <p>UNESCO / WHO data mining</p>
+                    <p>Work with Kat on What & why...</p>
+
                     <p>Brief description.</p>
                     <h2>Overview</h2>
                     <hr>
@@ -363,18 +459,6 @@
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
-                </div>
-            </div>
-            <!--Article 05-->
-            <div class="popup_container" id="artID_05">
-                <div class="close_menu">
-                    <h1></h1>
-                    <button class="close_button" onclick="close_article('artID_05')">Back</button>
-                </div>
-                <div class="popup_article">
-                    <h1>Health data analysis</h1>
-                    <p>UNESCO / WHO data mining</p>
-                    <p>Work with Kat on What & why...</p>
                 </div>
             </div>
             <!--Article 06-->
@@ -427,41 +511,101 @@
             <!--Article 07-->
             <div class="popup_container" id="artID_07">
                 <div class="close_menu">
+                    <h1>Statistical inference</h1>
                     <button class="close_button" onclick="close_article('artID_07')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Statistical inference</h1>
+                    <img class="img_header" src="">
                     <p>Classification of data - Engineering example?</p>
+
+                    <p>Brief description.</p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Overview with <mark>marked</mark> items</p>
+                    <p>Another paragraph</p>
+                    <img src="">
+                    <figcaption>Caption related to image above</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
             </div>
             <!--Article 08-->
             <div class="popup_container" id="artID_08">
                 <div class="close_menu">
+                    <h1>Chaos - pendulums</h1>
                     <button class="close_button" onclick="close_article('artID_08')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Chaos - pendulums</h1>
+                    
                     <p>Modelling single and double pendulums. Demo math and numerical integration.</p>
+
+                    <p>Brief description.</p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Overview with <mark>marked</mark> items</p>
+                    <p>Another paragraph</p>
+                    <img src="">
+                    <figcaption>Caption related to image above</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
             </div>
             <!--Article 09-->
             <div class="popup_container" id="artID_09">
                 <div class="close_menu">
+                    <h1>Controlling chaos</h1>
                     <button class="close_button" onclick="close_article('artID_09')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Controlling chaos</h1>
+                    <img class="img_header" src="">
                     <p>Control system for double pendulum</p>
+
+                    <p>Brief description.</p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Overview with <mark>marked</mark> items</p>
+                    <p>Another paragraph</p>
+                    <img src="">
+                    <figcaption>Caption related to image above</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
             </div>
             <!--Article 10-->
             <div class="popup_container" id="artID_10">
                 <div class="close_menu">
+                    <h1>Machine learning</h1>
                     <button class="close_button" onclick="close_article('artID_10')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <h1>Machine learning</h1>
+                    <img class="img_header" src="">
                     <p>...</p>
+
+                    <p>Brief description.</p>
+                    <h2>Overview</h2>
+                    <hr>
+                    <p>Overview with <mark>marked</mark> items</p>
+                    <p>Another paragraph</p>
+                    <img src="">
+                    <figcaption>Caption related to image above</figcaption>
+                    <h2>Find out more...</h2>
+                    <hr>
+                    <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
+                        Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                    <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div>
             </div>
         </div>
