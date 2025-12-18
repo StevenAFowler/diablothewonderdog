@@ -423,7 +423,7 @@ button:active {
   padding-left: 5%;
 }
 #blur_overlay .popup_container .popup_article li {
-  margin: 0;
+  list-style-position: outside;
 }
 #blur_overlay .popup_container .popup_article figcaption {
   font-size: 0.8rem;
