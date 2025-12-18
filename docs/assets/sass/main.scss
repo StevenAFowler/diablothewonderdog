@@ -489,7 +489,8 @@ button {    // Defines all buttons on website
                 padding-left: 5%;
             }
             li {
-                margin:0;
+                // margin:0;
+                list-style-position: outside;
             }
             figcaption {
                 font-size: 0.8rem;
