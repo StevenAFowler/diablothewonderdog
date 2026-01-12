@@ -1,4 +1,4 @@
-# [diablothewonderdog.github.io](https://stevenafowler.github.io/profile/)
+# [My profile](https://stevenafowler.github.io/profile/)
 
 This is the code for my profile webpage hosted on GitHub.
 
