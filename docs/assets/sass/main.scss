@@ -446,13 +446,13 @@ button {    // Defines all buttons on website
             }
             p, figcaption, h1, h2, h3, a, div, img {
                 margin-bottom: 1.5em;
-                margin-top: 1.5em;
+                margin-top: 0em;
 
                 @include for-tablet-portrait-up {
-                    margin-top: 3.5%;
+                    margin-top: 0;
                 }
                 @include for-tablet-landscape-up {
-                    margin-top: 2.5%;
+                    margin-top: 0;
                 }
                 @include for-desktop-up {
                 }
@@ -540,6 +540,7 @@ button {    // Defines all buttons on website
                 justify-content: center;
                 // flex-wrap: wrap;
                 width: 100%;
+                margin-bottom: 0;
                 div{
                     max-height: 50px;
                     margin-left: 2%;
