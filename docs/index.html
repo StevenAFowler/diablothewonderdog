@@ -56,7 +56,7 @@
         <!-- Articles selection -->
         <div id="article_space">
             <!-- Article complete -->
-            <h1>Completed projects</h1>
+            <h1>Projects</h1>
             <div id="article_complete" class="article_container">
                 <div class="article_item" onclick="open_article('artID_01')">
                     <div class="container_image">
@@ -136,7 +136,7 @@
                 </div> -->
                 <div class="article_item" onclick="open_article('artID_08')">
                     <div class="container_image">
-                        <img src="assets/images/art_itm_08.webp">
+                        <img src="assets/images/art_itm_08.jpg">
                     </div>
                     <div class="container_header">
                         <h2>Simulating Chaos</h2>
@@ -169,6 +169,9 @@
                     <p>An <mark>engineer</mark> and <mark>scientist</mark> focused on leading the development of solutions to deliver innovative and differentiating award-winning products. 
                         Striving to solve technical challenges by applying multidisciplinary knowledge to facilitate, lead teams and mentor individuals in their areas of expertise. 
                         Passionate about communication, distilling complex ideas into simple messages. Data driven, basing decisions and strategies on a foundation of sound information.</p>
+                    <div>
+                        <figcaption>Awards won by companies I've worked with or consulted for, based on projects I have significantly contributed to.</figcaption>
+                    </div>
                     <div id="award_images">
                         <div><img src="assets/images/iF Award.png"></div>
                         <div><img src="assets/images/RSoM Award.png"> </div>
@@ -188,7 +191,7 @@
                         <i>Examples of my work include:</i>
                         <br>
                         Leading multiple product <mark>verification</mark> studies and being responsible for the application of <mark>statistical techniques</mark> to meet industrial standards.
-                        Within the field of IVD’s, I have guided studies meeting compliance to the <a src="https://clsi.org/" target="_blank" rel="noopener noreferrer">CLSI</a> standards resulting in successful FDA submissions.
+                        Within the field of IVD’s, I have guided studies meeting compliance to the <a href="https://clsi.org/" target="_blank" rel="noopener noreferrer">CLSI</a> standards resulting in successful FDA submissions.
                         I have also supported clients in the successful verification of devices like in-halers and otoscopes. 
                     </p>
                     <div class="code">
@@ -235,16 +238,17 @@
                     <p>
                         While developing various products I've successfully created test systems and rigs to verify and investigate a product’s performance. 
                         These test systems focused on generating quantitative data for example:
+                        
+                        <ul>
+                            <li>Creating a performance evaluation rig for disposable IVD cartridges which included fluidic control generating real-time force and distance data with image analysis of fluidic movement. 
+                                I successfully wrote the rig control and data acquisition software in Python. 
+                                The rig identified key performance characteristics and batch variations that needed further control in the production process.</li>
+                            <li>Wrote an image analysis program to fit young-laplace curves to droplets in order to measure contact angles on chemically modified surfaces. 
+                                    This provided a quantitative analysis of surface changes that could be correlated to device performance.</li>
+                        </ul>
                     </p>
-                    <ul>
-                        <li>Creating a performance evaluation rig for disposable IVD cartridges which included fluidic control generating real-time force and distance data with image analysis of fluidic movement. 
-                            I successfully wrote the rig control and data acquisition software in Python. 
-                            The rig identified key performance characteristics and batch variations that needed further control in the production process.</li>
-                        <li>Wrote an image analysis program to fit young-laplace curves to droplets in order to measure contact angles on chemically modified surfaces. 
-                            This provided a quantitative analysis of surface changes that could be correlated to device performance.</li>
-                    </ul>
                     <div class="code">
-                    <code>Tools used: Python, Solidworks FEA, OnShape, Creo, Java, C++</code>
+                        <code>Tools used: Python, Solidworks, OnShape, Creo, Java, C++</code>
                     </div>
 
                     <hr>
@@ -276,12 +280,12 @@
                         <li>All images were taken or made by me (or will be when I finish the site)</li>
                         <li>Design ideas, input and direction from the awesome Ted Low (<a href="https://www.ted8low.com/"target="_blank" rel="noopener noreferrer">Ted's site</a>)</li>
                     </ul>
-                    <hr>
+                    <!-- <hr>
                     <h2>This is Diablo the wonder dog...just in case you were wondering</h2>
-                    <img src="assets/images/diablo.jpg">
+                    <img src="assets/images/diablo.jpg"> -->
                 </div>
             </div>
-            <!--Article 01-->
+            <!--Article 01 - Thermal egg modelling-->
             <div class="popup_container" id="artID_01">
                 <div class="close_menu">
                     <h1>Thermal modelling of boiling eggs</h1>
@@ -322,7 +326,7 @@
                     </p>
                 </div>
             </div>
-            <!--Article 02-->
+            <!--Article 02 - Lego Database-->
             <div class="popup_container" id="artID_02">
                 <div class="close_menu">
                     <h1>Lego database</h1>
@@ -340,7 +344,7 @@
                         So, the first step to exploring this data was to build a local database that I could query.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Construction of the database was done in 5 stages:</p>
+                    <p>Construction of the database was done in 5 stages:
                     <ul>
                         <li>Install <mark>MySQL</mark></li>
                         <li>Wrote <mark>SQL</mark> scripts to create DB and build Schema based on image above</li>
@@ -348,6 +352,7 @@
                         <li>Loaded CSV data into DB with <mark>SQL</mark> scripts</li>
                         <li>Ran checks to ensure all was working</li>
                     </ul>
+                    </p>
                     <p>Fundamentally I did this because I like Lego! But it also provided me with a local DB to explore, test out my analytical skills and indulge my curiosity.
                         It was a great reminded that cleaning up the data is nearly always required and a significant chunk of any analytical analysis. 
                         For example, I assumed (hoped) the data would be in good shape coming from a working system and in the most part it was. 
@@ -365,7 +370,7 @@
                     </p>                
                 </div>
             </div>
-            <!--Article 03-->
+            <!--Article 03 - Lego analysis-->
             <div class="popup_container" id="artID_03">
                 <div class="close_menu">
                     <h1>Lego bricks since 1949</h1>
@@ -404,7 +409,7 @@
                     </p>
                 </div>
             </div>
-            <!--Article 04-->
+            <!--Article 04 - Drug diffusion in tumours-->
             <div class="popup_container" id="artID_04">
                 <div class="close_menu">
                     <h1>Drug diffusion in tumours</h1>
@@ -432,7 +437,7 @@
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
-            <!--Article 05-->
+            <!--Article 05 - Exploration into sports data-->
             <div class="popup_container" id="artID_05">
                 <div class="close_menu">
                     <h1>Exploring sports trends</h1>
@@ -446,7 +451,15 @@
                     </p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>...</p>
+                    <p>This investigation consists of:
+                        <ul>
+                            <li>Acquisition of data from various websites</li>
+                            <li>Data wrangling resulting in a ordered data frame(s)</li>
+                            <li>Initial exploration of the data to get a feel for what is there</li>
+                            <li>Use of an unsupervised ML algorithm to identify any clusters in the data</li>
+                            <li>Look to see if any parameters can be correlated to success</li>
+                        </ul>
+                    </p>
                     <!-- <p>Another paragraph</p>
                     <img src="">
                     <figcaption>Caption related to image above</figcaption>
@@ -458,7 +471,7 @@
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
-            <!--Article 06-->
+            <!--Article 06 - WHO data analysis-->
             <div class="popup_container" id="artID_06">
                 <div class="close_menu">
                     <h1>Global Health Observatory</h1>
@@ -489,8 +502,8 @@
                     <figcaption>Example of geospatial plotting of GHO data.</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
-                    <p>Use an <a href="genericPlot.html" target="_blank" rel="noopener noreferrer">interactive chart</a>
-                         , read a <a href="Global_Health_Observatory.html" target="_blank" rel="noopener noreferrer">Report</a>
+                    <p>Use an <a href="genericPlot.html" target="_blank" rel="noopener noreferrer">interactive chart</a>, 
+                        read a <a href="Global_Health_Observatory.html" target="_blank" rel="noopener noreferrer">Report</a>
                         . Or review the code in full at <a href="https://github.com/StevenAFowler/Health-data" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button">
                         <a class="a_button" href="genericPlot.html" target="_blank" rel="noopener noreferrer">
@@ -505,7 +518,7 @@
                     </p>
                 </div>
             </div>
-            <!--Article 07-->
+            <!--Article 07 - NO LONGER IN USE-->
             <div class="popup_container" id="artID_07">
                 <!-- <div class="close_menu">
                     <h1>Statistical inference</h1>
@@ -530,18 +543,20 @@
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
                 </div> -->
             </div>
-            <!--Article 08-->
+            <!--Article 08 - Modelling Chaos-->
             <div class="popup_container" id="artID_08">
                 <div class="close_menu">
                     <h1>Modelling Chaos</h1>
                     <button class="close_button" onclick="close_article('artID_08')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="assets/images/art_itm_08.webp">
+                    <img class="img_header" src="assets/images/art_itm_08.jpg">
                     <p>Simulation of single and double pendulums ensuring the conservation of energy despite the errors inherent with numerical methods.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>...</p>
+                    <p>This simulation focuses on modelling pendulums and numerical methods used to be the most accurate and efficient. 
+                        A selected simulation approached will then be used to create a feedback system to control the pendulum.
+                    </p>
                     <!-- <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
@@ -552,7 +567,7 @@
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
-            <!--Article 09-->
+            <!--Article 09 - Controlling chaos-->
             <div class="popup_container" id="artID_09">
                 <div class="close_menu">
                     <h1>Controlling chaos</h1>
@@ -560,10 +575,13 @@
                 </div>
                 <div class="popup_article">
                     <img class="img_header" src="assets/images/art_itm_09.png">
-                    <p>This is looking at control feedback systems for pendulum systems. In particular chaotic double pendulums.</p>
+                    <p>This is looking at control feedback systems for inverted pendulums. In particular chaotic double pendulums.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>...</p>
+                    <p>
+                        I've been fascinated with control systems having seen a physical implementation of an inverted pendulum at university. 
+                        This is my development of a control system for a single and double inverted pendulum using the pendulum simulator that I previously created.
+                    </p>
                     <!-- <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
@@ -590,9 +608,10 @@
                         Once all resource is acquired, the game is won for the offensive side. 
                         However, the defensive side can build turrets to defend their base giving them the option to win by rendering all the offensive side out-of-the game.
                     </p>
-                    <!-- <img src="">
-                    <figcaption>Caption related to image above</figcaption>
-                    <h2>Find out more...</h2>
+                    <img src="assets/images/art_10_1.png">
+                    <figcaption>Screenshot of tower defense game in development. 
+                        Blue square is where the offensive side starts; Grey square is the tower under attack; Green cross is a turret; Red dots are offensive players.</figcaption>
+                    <!-- <h2>Find out more...</h2>
                     <hr>
                     <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
@@ -603,6 +622,6 @@
         </div>
         <!-- website footer -->
          <div id='footer' onclick="open_article('artID_Website')">
-            Information about this website, licensing and diablo the wonder dog!
+            Information about this website and licensing.
          </div>
     </body>

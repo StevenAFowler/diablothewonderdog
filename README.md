@@ -1,5 +1,9 @@
-# diablothewonderdog.github.io
+# [diablothewonderdog.github.io](https://stevenafowler.github.io/profile/)
 
-This is a GitHub static website test...
+This is the code for my profile webpage hosted on GitHub.
 
-Another update
+Links:
+
+* My profile website: [https://stevenafowler.github.io/profile/](https://stevenafowler.github.io/profile/)
+* Find our more about GitHub static hosting: [link](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
