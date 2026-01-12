@@ -97,7 +97,8 @@ let linesCenter = [];
 
 // Inital drawing
 window.addEventListener('resize', debounce(updateSVG, 250));
-updateSVG(svg);
+window.addEventListener('load', updateSVG(svg)); // Initial update after page has loaded
+// updateSVG(svg);
 
 // Event listener for mouse movement over the SVG
 activeContainer.addEventListener('mousemove', (event) => {
