@@ -98,6 +98,15 @@
             <!-- Article WIP -->
             <h1>Works in progress</h1>
             <div id="article_wip" class="article_container">
+                <div class="article_item" onclick="open_article('artID_10')">
+                    <div class="container_image">
+                        <img src="assets/images/turrret.png">
+                    </div>
+                    <div class="container_header">
+                        <h2>AI vs AI</h2>
+                        <p>Turret defense game pitting different machine learning against each other</p>
+                    </div>
+                </div>
                 <div class="article_item" onclick="open_article('artID_04')">
                     <div class="container_image">
                         <img src="assets/images/art_itm_04.jpg">
@@ -109,14 +118,14 @@
                 </div>
                 <div class="article_item" onclick="open_article('artID_05')">
                     <div class="container_image">
-                        <img src="assets/images/art_itm_05.webp">
+                        <img src="assets/images/springboks.jpg">
                     </div>
                     <div class="container_header">
-                        <h2>Health data analysis</h2>
-                        <p>UNESCO / WHO data mining</p>
+                        <h2>Exploring sports trends</h2>
+                        <p>Machine learning exploration of the springboks</p>
                     </div>
                 </div>
-                <div class="article_item" onclick="open_article('artID_07')">
+                <!-- <div class="article_item" onclick="open_article('artID_07')">
                     <div class="container_image">
                         <img src="assets/images/art_itm_07.png">
                     </div>
@@ -124,14 +133,14 @@
                         <h2>Statistics inference</h2>
                         <p>classification of data</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="article_item" onclick="open_article('artID_08')">
                     <div class="container_image">
                         <img src="assets/images/art_itm_08.webp">
                     </div>
                     <div class="container_header">
-                        <h2>Chaos - pendulums</h2>
-                        <p>Model of pendulums</p>
+                        <h2>Simulating Chaos</h2>
+                        <p>Model of a multiple pendulum system</p>
                     </div>
                 </div>
                 <div class="article_item" onclick="open_article('artID_09')">
@@ -140,15 +149,6 @@
                     </div>
                     <div class="container_header">
                         <h2>Controlling chaos</h2>
-                        <p>Control system for double pendulum</p>
-                    </div>
-                </div>
-                <div class="article_item" onclick="open_article('artID_10')">
-                    <div class="container_image">
-                        <img src="assets/images/art_itm_10.png">
-                    </div>
-                    <div class="container_header">
-                        <h2>Machine learning</h2>
                         <p>Control system for double pendulum</p>
                     </div>
                 </div>
@@ -435,19 +435,19 @@
             <!--Article 05-->
             <div class="popup_container" id="artID_05">
                 <div class="close_menu">
-                    <h1>Health data analysis</h1>
+                    <h1>Exploring sports trends</h1>
                     <button class="close_button" onclick="close_article('artID_05')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="">
-                    <p>UNESCO / WHO data mining</p>
-                    <p>Work with Kat on What & why...</p>
-
-                    <p>Brief description.</p>
+                    <img class="img_header" src="assets/images/springboks.jpg">
+                    <p>
+                        The springboks have dominated international rugby since the 2019 world cup. 
+                        This is exploration to look for any insights or correlations that may indicate why this is.
+                    </p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Overview with <mark>marked</mark> items</p>
-                    <p>Another paragraph</p>
+                    <p>...</p>
+                    <!-- <p>Another paragraph</p>
                     <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
@@ -455,7 +455,7 @@
                     <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
             <!--Article 06-->
@@ -507,7 +507,7 @@
             </div>
             <!--Article 07-->
             <div class="popup_container" id="artID_07">
-                <div class="close_menu">
+                <!-- <div class="close_menu">
                     <h1>Statistical inference</h1>
                     <button class="close_button" onclick="close_article('artID_07')">Back</button>
                 </div>
@@ -528,31 +528,28 @@
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
                     <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
-                </div>
+                </div> -->
             </div>
             <!--Article 08-->
             <div class="popup_container" id="artID_08">
                 <div class="close_menu">
-                    <h1>Chaos - pendulums</h1>
+                    <h1>Modelling Chaos</h1>
                     <button class="close_button" onclick="close_article('artID_08')">Back</button>
                 </div>
                 <div class="popup_article">
-                    
-                    <p>Modelling single and double pendulums. Demo math and numerical integration.</p>
-
-                    <p>Brief description.</p>
+                    <img class="img_header" src="assets/images/art_itm_08.webp">
+                    <p>Simulation of single and double pendulums ensuring the conservation of energy despite the errors inherent with numerical methods.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Overview with <mark>marked</mark> items</p>
-                    <p>Another paragraph</p>
-                    <img src="">
+                    <p>...</p>
+                    <!-- <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
                     <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
             <!--Article 09-->
@@ -562,47 +559,45 @@
                     <button class="close_button" onclick="close_article('artID_09')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="">
-                    <p>Control system for double pendulum</p>
-
-                    <p>Brief description.</p>
+                    <img class="img_header" src="assets/images/art_itm_09.png">
+                    <p>This is looking at control feedback systems for pendulum systems. In particular chaotic double pendulums.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Overview with <mark>marked</mark> items</p>
-                    <p>Another paragraph</p>
-                    <img src="">
+                    <p>...</p>
+                    <!-- <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
                     <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
             <!--Article 10-->
             <div class="popup_container" id="artID_10">
                 <div class="close_menu">
-                    <h1>Machine learning</h1>
+                    <h1>AI vs AI</h1>
                     <button class="close_button" onclick="close_article('artID_10')">Back</button>
                 </div>
                 <div class="popup_article">
-                    <img class="img_header" src="">
-                    <p>...</p>
-
-                    <p>Brief description.</p>
+                    <img class="img_header" src="assets/images/turrret.png">
+                    <p>Different machine learning algorithms are selected and then trained for the offensive and defensive sides of a tower defense game.</p>
                     <h2>Overview</h2>
                     <hr>
-                    <p>Overview with <mark>marked</mark> items</p>
-                    <p>Another paragraph</p>
-                    <img src="">
+                    <p>
+                        This is a simulation of a classic tower defense game where an offensive side has to travel from a starting location to the oppositions base, take resource, and then return the resource to the start location.
+                        Once all resource is acquired, the game is won for the offensive side. 
+                        However, the defensive side can build turrets to defend their base giving them the option to win by rendering all the offensive side out-of-the game.
+                    </p>
+                    <!-- <img src="">
                     <figcaption>Caption related to image above</figcaption>
                     <h2>Find out more...</h2>
                     <hr>
                     <p>Read the full <a href="" target="_blank" rel="noopener noreferrer">Report</a>. 
                         Or review the code in full at <a href="" target="_blank" rel="noopener noreferrer">Github</a>.</p>
                     <p class="p_button"><a class="a_button" href="" target="_blank" rel="noopener noreferrer">Report</a>
-                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    <a class="a_button" href="" target="_blank" rel="noopener noreferrer">Github</a></p> -->
                 </div>
             </div>
         </div>
